@@ -1,0 +1,106 @@
+/*@import "material/buttons.scss";*/
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext");
+html {
+  font-family: "Lato", Verdana, sans-serif;
+  min-height: 100vh;
+  font-size: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #000000; }
+
+.body--lock {
+  overflow: hidden; }
+
+.heading {
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff; }
+  .heading--regular {
+    font-weight: normal; }
+  .heading--italic {
+    font-style: italic; }
+  .heading--thin {
+    font-weight: 300; }
+  .heading--center {
+    text-align: center; }
+
+.heading--1 {
+  font-size: calc(1.13636vw + 2.02273rem);
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--1 {
+      font-size: 2.875rem; } }
+
+.heading--2 {
+  font-size: calc(0.68182vw + 1.73864rem);
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--2 {
+      font-size: 2.25rem; } }
+
+.heading--3 {
+  font-size: calc(0.45455vw + 1.28409rem);
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--3 {
+      font-size: 1.625rem; } }
+
+.heading--4 {
+  font-size: calc(0.45455vw + 1.03409rem);
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--4 {
+      font-size: 1.375rem; } }
+
+.heading--5 {
+  font-size: calc(0.22727vw + 0.95455rem);
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--5 {
+      font-size: 1.125rem; } }
+
+.heading--6 {
+  font-size: calc(0.22727vw + 0.95455rem);
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+  @media (min-width: 75em) {
+    .heading--6 {
+      font-size: 1.125rem; } }
+
+.paragraph {
+  font-size: calc(0.22727vw + 0.95455rem);
+  display: block;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1em;
+  color: #ffffff; }
+  @media (min-width: 75em) {
+    .paragraph {
+      font-size: 1.125rem; } }
+  .paragraph--center {
+    text-align: center; }
+
+.ratio-keeper {
+  display: block;
+  width: 100%; }
+
+.ratio-keeper-v {
+  display: block;
+  height: 100%; }
+
+/*# sourceMappingURL=main.css.map */

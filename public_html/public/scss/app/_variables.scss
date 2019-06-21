@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&subset=latin-ext'); //Lora - serif, regular, regular italic and bold
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext'); //Lato - sans-serif, regular
+
+$font-sans-serif: 'Lato',Verdana, sans-serif;
+$font-serif: 'Lora',Georgia, serif;
+
+//-----z-indexes--
+$z-indexes: (
+service: 2000,
+service-menu: 10,
+service-details: 20,
+menu: 1000,
+menu-background:10,
+menu-container: 20,
+menu-container-content:10,
+header: 500,
+);
+
+$color-primary: $material-color-black;
+$color-primary-light: #ECECEC;
+$color-secondary: $material-color-white;
+$color-terciary: #20a70c;
+$color-terciary-light: #57c500;
