@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+
+.info{
+    @include container;
+    justify-content: space-between;
+    padding-top: rem($info-padding-vertical);
+    padding-bottom: rem($info-padding-vertical);
+}
+
+.info__logo{
+    @include linear-interpolation-chain(width, $info-logo-widths);
+    margin-bottom: rem(80);
+}
+
+.info__description{
+    width: 70%;
+}
+
+.info__contacts{
+    width: 25%;
+    border: 1px solid black;
+}

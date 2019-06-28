@@ -17,6 +17,17 @@
     margin-right: auto;
 }
 
+@mixin container-custom($max-width, $inner-paddings) {
+    display: flex;
+    width: 100%;
+    $layout-container-largest-padding: map-get($inner-paddings,nth(map-keys($inner-paddings),1));
+    max-width: rem($max-width + ($layout-container-largest-padding * 2));
+    margin-left: auto;
+    margin-right: auto;
+    @include linear-interpolation-chain(padding-left,$inner-paddings);
+    @include linear-interpolation-chain(padding-right,$inner-paddings);
+}
+
 @function even-margin-between($per-row,$width){
     @return even-margin-between-custom($per-row,100 - ($per-row * $width));
 }

@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+.main{
+    @include linear-interpolation-chain(margin-top, $header-heights);
+    flex-grow: 1;
+}

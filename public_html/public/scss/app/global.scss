@@ -16,12 +16,5 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: $color-primary;
+    color: $color-secondary-dark;
 }
-
-
-.body--lock{
-    overflow: hidden;
-}
-
-

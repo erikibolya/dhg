@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $header-background-color;
+    @include linear-interpolation-chain(padding-top, $header-spacings);
+    @include linear-interpolation-chain(padding-bottom, $header-spacings);
+
+    @include linear-interpolation-chain(font-size,(
+    1920: 18,
+        xl: 12
+        ));
+    @include material-box-shadow($header-shadow-depth);
+}
+
+.header__container{
+    @include container-custom($header-container-max-width,$header-container-inner-paddings);
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header__logo{
+    width: 10.3em;
+    min-width: rem(120);
+}

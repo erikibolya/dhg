@@ -1,0 +1,39 @@
+@import "variables.scss";
+
+.menu{
+    /*@include linear-interpolation-chain(font-size, $menu-font-sizes);*/
+    /*@include fluid-font($menu-font-size);*/
+}
+
+.menu__item{
+    color: $menu-color;
+    text-decoration: none;
+    &:not(:last-of-type){
+        margin-right: 3em;
+    }
+
+    &:hover{
+        color: $menu-color-active;
+    }
+
+    &--develope{
+
+    }
+
+    &--invest{
+
+    }
+
+    &--solar{
+
+    }
+
+    &--finance{
+
+    }
+
+    &--about{
+
+    }
+}
+

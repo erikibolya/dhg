@@ -6,18 +6,10 @@ $font-serif: 'Lora',Georgia, serif;
 
 //-----z-indexes--
 $z-indexes: (
-service: 2000,
-service-menu: 10,
-service-details: 20,
-menu: 1000,
-menu-background:10,
-menu-container: 20,
-menu-container-content:10,
-header: 500,
+
 );
 
-$color-primary: $material-color-black;
-$color-primary-light: #ECECEC;
-$color-secondary: $material-color-white;
-$color-terciary: #20a70c;
-$color-terciary-light: #57c500;
+$color-primary: #000000;
+$color-primary-light: #d1d1d1;
+$color-secondary: #ffffff;
+$color-secondary-dark: #fcfcfc;

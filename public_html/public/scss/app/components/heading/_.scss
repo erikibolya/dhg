@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+.heading{
+    font-weight: bold;
+    font-style: normal;
+    color: $heading-color;
+    text-transform: uppercase;
+
+
+    &--light{
+        color: $heading-color-light;
+    }
+
+    &--regular{
+        font-weight: normal;
+    }
+    &--italic{
+        font-style: italic;
+    }
+    &--thin{
+        font-weight: 300;
+    }
+
+    &--center{
+        text-align: center;
+    }
+}
+@for $i from 1 through 6{
+    #{".heading--"+$i}{
+        @include heading("h"+$i);
+    }
+}

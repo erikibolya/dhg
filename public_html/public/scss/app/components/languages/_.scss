@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.languages{
+
+}
+
+.languages__item{
+    text-decoration: none;
+    &:not(:last-child){
+        margin-right: 0.8em;
+    }
+}
+
+.languages__flag{
+    width: 1.38em;
+    min-width: rem(18);
+}
