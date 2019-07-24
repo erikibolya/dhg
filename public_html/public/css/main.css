@@ -77,8 +77,18 @@ body {
   text-decoration: none; }
   .menu__item:not(:last-of-type) {
     margin-right: 3em; }
-  .menu__item:hover {
+  .menu__item:hover, .menu__item--active {
     color: #000000; }
+    .menu__item:hover.menu__item--developing, .menu__item--active.menu__item--developing {
+      color: #0d56a5; }
+    .menu__item:hover.menu__item--finance, .menu__item--active.menu__item--finance {
+      color: #fdb813; }
+    .menu__item:hover.menu__item--landscape, .menu__item--active.menu__item--landscape {
+      color: #8dc63f; }
+    .menu__item:hover.menu__item--solar, .menu__item--active.menu__item--solar {
+      color: #ed1c24; }
+    .menu__item:hover.menu__item--about, .menu__item--active.menu__item--about {
+      color: #00a6e7; }
 
 .languages__item {
   text-decoration: none; }
@@ -250,6 +260,16 @@ body {
   padding-bottom: 0.8em; }
   .contacts__table__cell:first-child {
     color: #000000; }
+    .main--developing .contacts__table__cell:first-child {
+      color: #0d56a5; }
+    .main--finance .contacts__table__cell:first-child {
+      color: #fdb813; }
+    .main--landscape .contacts__table__cell:first-child {
+      color: #8dc63f; }
+    .main--solar .contacts__table__cell:first-child {
+      color: #ed1c24; }
+    .main--about .contacts__table__cell:first-child {
+      color: #00a6e7; }
   .contacts__table__row--space .contacts__table__cell {
     padding-bottom: 2em; }
 
@@ -261,7 +281,7 @@ body {
   margin-right: auto;
   padding-left: calc(1.78571vw + 0.58036rem);
   padding-right: calc(1.78571vw + 0.58036rem);
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column; }
@@ -285,12 +305,19 @@ body {
       padding-right: 2.5rem; } }
   @media (min-width: 56.25em) {
     .divisions {
-      flex-direction: row; } }
+      flex-direction: row;
+      align-items: flex-start; } }
 
 .divisions__heading {
   text-transform: none;
   width: 100%;
   margin-bottom: 2.5em; }
+
+.divisions__breadcrumb {
+  color: #d1d1d1;
+  font-size: 0.7em;
+  margin-left: 1em;
+  white-space: nowrap; }
 
 .divisions__card {
   position: relative;
@@ -299,8 +326,6 @@ body {
   box-shadow: 0 0.14402rem 0.28533rem -0.05707rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.36413rem 0.02446rem rgba(0, 0, 0, 0.14), 0 0.18207rem 0.42935rem 0.01087rem rgba(0, 0, 0, 0.12);
   padding: 8% 5% 5% 5%;
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 5rem; }
   @media (min-width: 56.25em) {
     .divisions__card {

@@ -35,8 +35,23 @@
     padding-bottom: 0.8em;
     &:first-child{
         color: $contacts-color-dark;
+        @at-root .main--developing &{
+            color: $color-developing;
+        }
+        @at-root .main--finance &{
+            color: $color-finance;
+        }
+        @at-root .main--landscape &{
+            color: $color-landscape;
+        }
+        @at-root .main--solar &{
+            color: $color-solar;
+        }
+        @at-root .main--about &{
+            color: $color-about;
+        }
     }
-    
+
     @at-root .contacts__table__row--space &{
         padding-bottom: 2em;
     }

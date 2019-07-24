@@ -3,12 +3,13 @@
 
 .divisions{
     @include container;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
     @include media(l){
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 
@@ -18,6 +19,13 @@
     margin-bottom: 2.5em;
 }
 
+.divisions__breadcrumb{
+    color: $divisions-breadcrumb-color;
+    font-size: 0.7em;
+    margin-left: 1em;
+    white-space: nowrap;
+}
+
 .divisions__card{
     position: relative;
     width: 100%;
@@ -25,8 +33,6 @@
     @include material-box-shadow(4);
     padding: 8% 5% 5% 5%;
     text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: rem(80);
 
     @include media(l){

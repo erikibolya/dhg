@@ -12,28 +12,23 @@
         margin-right: 3em;
     }
 
-    &:hover{
+    &:hover,&--active{
         color: $menu-color-active;
-    }
-
-    &--develope{
-
-    }
-
-    &--invest{
-
-    }
-
-    &--solar{
-
-    }
-
-    &--finance{
-
-    }
-
-    &--about{
-
+        &.menu__item--developing{
+            color: $color-developing;
+        }
+        &.menu__item--finance{
+            color: $color-finance;
+        }
+        &.menu__item--landscape{
+            color: $color-landscape;
+        }
+        &.menu__item--solar{
+            color: $color-solar;
+        }
+        &.menu__item--about{
+            color: $color-about;
+        }
     }
 }
 
