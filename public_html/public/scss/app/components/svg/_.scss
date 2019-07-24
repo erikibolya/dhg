@@ -1,0 +1,26 @@
+@import "variables.scss";
+.svg{
+    display: block;
+}
+
+
+.svg--arrow{
+
+
+    .svg__path{
+        fill: $color-primary;
+
+        @at-root .divisions__card--developing &{
+            fill: $color-developing;
+        }
+        @at-root .divisions__card--finance &{
+            fill: $color-finance;
+        }
+        @at-root .divisions__card--landscape &{
+            fill: $color-landscape;
+        }
+        @at-root .divisions__card--solar &{
+            fill: $color-solar;
+        }
+    }
+}

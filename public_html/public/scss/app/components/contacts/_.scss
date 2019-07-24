@@ -2,5 +2,42 @@
 
 
 .contacts{
+    padding: rem(40) rem(55);
+    color: $contacts-color;
+
+}
+
+.contacts__heading{
+    color: $contacts-heading-color;
+    margin-bottom: 2.5em;
+}
+
+.contacts__line{
+    margin-bottom: 0.8em;
+    &--dark{
+        color: $contacts-color-dark;
+    }
+}
+
+.contacts__block{
+    margin-bottom: rem(40);
+}
+
+.contacts__table{
+    width: 100%;
+}
+
+.contacts__table__row{
+
+}
+
+.contacts__table__cell{
+    padding-bottom: 0.8em;
+    &:first-child{
+        color: $contacts-color-dark;
+    }
     
+    @at-root .contacts__table__row--space &{
+        padding-bottom: 2em;
+    }
 }

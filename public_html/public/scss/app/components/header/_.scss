@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .header{
+    z-index: z-index(header);
     width: 100%;
     position: fixed;
     top: 0;

@@ -1,0 +1,66 @@
+@import "variables.scss";
+
+
+.divisions{
+    @include container;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @include media(l){
+        flex-direction: row;
+    }
+}
+
+.divisions__heading{
+    text-transform: none;
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+
+.divisions__card{
+    position: relative;
+    width: 100%;
+    max-width: rem(600);
+    @include material-box-shadow(4);
+    padding: 8% 5% 5% 5%;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(80);
+
+    @include media(l){
+        width: 46%;
+    }
+}
+
+.divisions__card__logo{
+    width: 100%;
+    max-width: rem(450);
+}
+
+.divisions__card__paragraph{
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+
+.divisions__card__button{
+    position: absolute;
+    width: 12%;
+    display: block;
+    bottom: 0;
+    @include border-radius(50%); 
+    @include material-box-shadow(4);
+    background-color: $color-secondary;
+    transform: translateY(50%);
+}
+
+.divisions__card__svg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+}

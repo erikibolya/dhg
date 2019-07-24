@@ -6,6 +6,7 @@ $font-serif: 'Lora',Georgia, serif;
 
 //-----z-indexes--
 $z-indexes: (
+header: 100
 
 );
 
@@ -13,3 +14,8 @@ $color-primary: #000000;
 $color-primary-light: #d1d1d1;
 $color-secondary: #ffffff;
 $color-secondary-dark: #fcfcfc;
+
+$color-developing: #0d56a5;
+$color-landscape: #8dc63f;
+$color-solar: #ed1c24;
+$color-finance: #fdb813;
