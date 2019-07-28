@@ -324,7 +324,7 @@ body {
   width: 100%;
   max-width: 37.5rem;
   box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
-  padding: 8% 5% 5% 5%;
+  padding: 6% 5% 5% 5%;
   text-decoration: none;
   margin-bottom: 5rem; }
   @media (min-width: 56.25em) {
@@ -332,8 +332,11 @@ body {
       width: 46%; } }
 
 .divisions__card__logo {
-  width: 100%;
-  max-width: 28.125rem; }
+  /*    width: 75%;
+      max-width: rem(325);*/
+  height: 3.125rem; }
+  .divisions__card--solar .divisions__card__logo {
+    height: 3.4375rem; }
 
 .divisions__card__paragraph {
   margin-top: 3em;
@@ -351,6 +354,14 @@ body {
   box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   transform: translateY(50%); }
+  .divisions__card--developing .divisions__card__button {
+    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(13, 86, 165, 0.65); }
+  .divisions__card--finance .divisions__card__button {
+    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(253, 184, 19, 0.65); }
+  .divisions__card--landscape .divisions__card__button {
+    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(141, 198, 63, 0.65); }
+  .divisions__card--solar .divisions__card__button {
+    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(237, 28, 36, 0.65); }
 
 .divisions__card__svg {
   position: absolute;
@@ -359,7 +370,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  width: 40%; }
+  width: 20%; }
 
 .svg {
   display: block; }

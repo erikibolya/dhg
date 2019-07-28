@@ -31,7 +31,7 @@
     width: 100%;
     max-width: rem(600);
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
-    padding: 8% 5% 5% 5%;
+    padding: 6% 5% 5% 5%;
     text-decoration: none;
     margin-bottom: rem(80);
 
@@ -41,8 +41,13 @@
 }
 
 .divisions__card__logo{
-    width: 100%;
-    max-width: rem(450);
+
+    /*    width: 75%;
+        max-width: rem(325);*/
+    height: rem(50);
+    @at-root .divisions__card--solar &{
+        height: rem(55);
+    }
 }
 
 .divisions__card__paragraph{
@@ -59,6 +64,20 @@
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
     background-color: $color-secondary;
     transform: translateY(50%);
+
+    @at-root .divisions__card--developing &{
+        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-developing,0.35);
+    }
+    @at-root .divisions__card--finance &{
+        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-finance,0.35);
+    }
+    @at-root .divisions__card--landscape &{
+        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-landscape,0.35);
+    }
+    @at-root .divisions__card--solar &{
+        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-solar,0.35);
+    }
+
 }
 
 .divisions__card__svg{
@@ -68,5 +87,5 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 40%;
+    width: 20%;
 }
