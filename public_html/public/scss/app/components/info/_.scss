@@ -27,5 +27,5 @@
 .info__contacts{
     margin: auto;
     min-width: rem($info-contacts-width);
-    @include material-box-shadow($info-contacts-shadow-depth);
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
 }

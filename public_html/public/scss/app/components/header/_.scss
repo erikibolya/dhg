@@ -14,7 +14,7 @@
     1920: 18,
         xl: 12
         ));
-    @include material-box-shadow($header-shadow-depth);
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
 }
 
 .header__container{
