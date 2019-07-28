@@ -5,9 +5,10 @@
 
 
 //loading app components
-@import "components/header/_.scss";
 
 @import "components/menu/_.scss";
+
+@import "components/header/_.scss";
 
 @import "components/languages/_.scss";
 
@@ -24,6 +25,8 @@
 @import "components/divisions/_.scss";
 
 @import "components/svg/_.scss";
+
+@import "components/google-maps/_.scss";
 
 @import "components/footer/_.scss";
 

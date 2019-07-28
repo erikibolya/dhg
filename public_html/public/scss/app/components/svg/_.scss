@@ -8,19 +8,19 @@
 
 
     .svg__path{
-        fill: $color-primary;
+        stroke: $color-primary;
 
         @at-root .divisions__card--developing &{
-            fill: $color-developing;
+            stroke: $color-developing;
         }
         @at-root .divisions__card--finance &{
-            fill: $color-finance;
+            stroke: $color-finance;
         }
         @at-root .divisions__card--landscape &{
-            fill: $color-landscape;
+            stroke: $color-landscape;
         }
         @at-root .divisions__card--solar &{
-            fill: $color-solar;
+            stroke: $color-solar;
         }
     }
 }

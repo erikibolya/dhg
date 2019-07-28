@@ -3,9 +3,7 @@ $layout-line-height-base: 1.45;
 $layout-container-max-width: 1200;
 $layout-container-inner-paddings: (
 xl: 40,
-l: 30,
-m: 20,
-s: 15
+s: 40
 );
 //!layout
 
@@ -37,7 +35,7 @@ xl:(xl:30,s:25),
 l:(xl:32,s:26),
 m:(xl:26,s:22),
 s:(xl:18,s:16),
-xs:(xl:14,s:12),
+xs:(xl:14,s:13),
 );
 //!fonts
 

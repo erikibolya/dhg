@@ -2,7 +2,7 @@
 
 
 .divisions{
-    @include container;
+    @include container-custom($layout-container-max-width,(xl:40,s:20));
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,11 +29,14 @@
 .divisions__card{
     position: relative;
     width: 100%;
-    max-width: rem(600);
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
-    padding: 7% 6% 5.5% 6%;
     text-decoration: none;
-    margin-bottom: rem(105);
+    @include linear-interpolation-chain(padding-left,$divisions-card-paddings-left);
+    @include linear-interpolation-chain(padding-right,$divisions-card-paddings-right);
+    @include linear-interpolation-chain(padding-top,$divisions-card-paddings-top);
+    @include linear-interpolation-chain(padding-bottom,$divisions-card-paddings-bottom);
+    @include linear-interpolation-chain(margin-bottom,$divisions-card-margins-bottom);
+
 
     @include media(l){
         width: 46%;
@@ -41,23 +44,18 @@
 }
 
 .divisions__card__logo{
-
-    /*    width: 75%;
-        max-width: rem(325);*/
-    height: rem(50);
-    @at-root .divisions__card--solar &{
-        height: rem(55);
-    }
+    width: 90%;
+    max-width: rem(306);
 }
 
 .divisions__card__paragraph{
-    margin-top: 3.3em;
+    @include linear-interpolation-chain(margin-top,$divisions-paragraph-spacings);
     margin-bottom: 0;
 }
 
 .divisions__card__button{
     position: absolute;
-    width: 12%;
+    width: rem(60);
     display: block;
     bottom: 0;
     @include border-radius(50%); 

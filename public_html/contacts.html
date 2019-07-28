@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DH group</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/normalize.css">
+    </head>
+    <body class="">
+        <header class="header">
+            <div class="header__container">
+                <img class="header__logo" src="public/img/dhg-logo.png">
+                <div class="header__menu menu">
+                    <a class="menu__item menu__item--developing" href="#">DH Developing & Construction</a>
+                    <a class="menu__item menu__item--landscape" href="#">DH Landscape Invest</a>
+                    <a class="menu__item menu__item--solar" href="#">DH Solar Energy</a>
+                    <a class="menu__item menu__item--finance" href="#">DH Finance</a>
+                    <a class="menu__item menu__item--about" href="#">About us</a>
+                    <a class="menu__item" href="#">Contact</a>
+                </div>
+                <div class="header__languages languages">
+                    <a class="languages__item" href="#">
+                        <img class="languages__flag" src="public/img/flag-sk.png">
+                    </a>
+                    <a class="languages__item" href="#">
+                        <img class="languages__flag" src="public/img/flag-sk.png">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main main--contacts">
+            <div class="google-map" id="map"></div>
+        </main>
+        <footer class="footer">
+            <img class="footer__img" src="public/img/dhg-logo-monotone.svg">
+            <span class="footer__text">
+                DHGroup2019
+            </span>
+        </footer>
+        <script>
+            function initMap() {
+                // Styles a map in night mode.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 40.674, lng: -73.945},
+                    zoom: 12,
+                    styles: [
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#e9e9e9"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                },
+                                {
+                                    "lightness": 20
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 29
+                                },
+                                {
+                                    "weight": 0.2
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 18
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                },
+                                {
+                                    "lightness": 21
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dedede"
+                                },
+                                {
+                                    "lightness": 21
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "saturation": 36
+                                },
+                                {
+                                    "color": "#333333"
+                                },
+                                {
+                                    "lightness": 40
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f2f2f2"
+                                },
+                                {
+                                    "lightness": 19
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#fefefe"
+                                },
+                                {
+                                    "lightness": 20
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#fefefe"
+                                },
+                                {
+                                    "lightness": 17
+                                },
+                                {
+                                    "weight": 1.2
+                                }
+                            ]
+                        }
+                    ]
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxvTWvOYgVuXB0gcz4nTzE4HOZYE1HWs8&callback=initMap"
+        async defer></script>
+    </body>
+</html>

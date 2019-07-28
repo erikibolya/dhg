@@ -2,6 +2,6 @@
 
 .main{
     @include linear-interpolation-chain(margin-top, $header-heights);
+    @include linear-interpolation-chain(margin-bottom, $main-margins-bottom);
     flex-grow: 1;
-    margin-bottom: rem(120);
 }

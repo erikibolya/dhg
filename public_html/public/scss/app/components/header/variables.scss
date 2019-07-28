@@ -8,13 +8,14 @@ s: 20
 $header-container-max-width: 1800;
 $header-container-inner-paddings: (
 1920: 60,
-xl: 40
+xl: 40,
+s: 40
 );
 
 $header-shadow-depth: 4;
 
 //computed change only when paddings changes
 $header-heights: (
-1920: 117.88,
-s: 66.44
+1920: 120,
+s: 66
 )

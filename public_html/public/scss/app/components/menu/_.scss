@@ -1,8 +1,10 @@
 @import "variables.scss";
 
 .menu{
-    /*@include linear-interpolation-chain(font-size, $menu-font-sizes);*/
-    /*@include fluid-font($menu-font-size);*/
+    display: none;
+    @include media($menu-breakpoint){
+        display: block;
+    }
 }
 
 .menu__item{

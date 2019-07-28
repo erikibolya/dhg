@@ -25,7 +25,11 @@
 }
 
 .info__contacts{
-    margin: auto;
-    min-width: rem($info-contacts-width);
-    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+    margin-right: auto;
+    @include media($info-breakpoint){
+        flex-shrink: 0;
+        margin: auto;
+        box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+        width: 25em;
+    }
 }

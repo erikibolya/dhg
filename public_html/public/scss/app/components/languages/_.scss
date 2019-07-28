@@ -1,7 +1,10 @@
 @import "variables.scss";
 
 .languages{
-
+    display: none;
+    @include media($menu-breakpoint){
+        display: block;
+    }
 }
 
 .languages__item{

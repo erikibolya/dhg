@@ -5,14 +5,13 @@
     @include container();
     @include fluid-font($footer-font-size);
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 2.5em;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer__img{
     width: 12em;
-    opacity: $footer-img-opacity;
 }
 
 .footer__text{

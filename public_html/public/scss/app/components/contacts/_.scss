@@ -4,7 +4,13 @@
 .contacts{
     padding: rem(40) rem(55);
     color: $contacts-color;
-
+    @include fluid-font(xs);
+    @at-root &.info__contacts{
+        padding: 0;
+        @include media($info-breakpoint){
+            padding: rem(40) rem(55);
+        }
+    }
 }
 
 .contacts__heading{

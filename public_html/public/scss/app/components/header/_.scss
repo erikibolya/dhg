@@ -7,9 +7,7 @@
     top: 0;
     left: 0;
     background-color: $header-background-color;
-    height: rem(120);
-
-
+    @include linear-interpolation-chain(height,$header-heights);
     @include linear-interpolation-chain(font-size,(
     1920: 18,
         xl: 12
@@ -28,4 +26,11 @@
 .header__logo{
     width: 10.3em;
     min-width: rem(120);
+}
+
+.header__hamburger{
+    display: block;
+    @include media($menu-breakpoint){
+        display: none;
+    }
 }
