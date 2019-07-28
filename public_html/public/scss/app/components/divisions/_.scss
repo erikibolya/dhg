@@ -66,25 +66,25 @@
     transform: translateY(50%);
 
     @at-root .divisions__card--developing &{
-        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-developing,0.35);
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-developing,0.45);
     }
     @at-root .divisions__card--finance &{
-        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-finance,0.35);
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-finance,0.45);
     }
     @at-root .divisions__card--landscape &{
-        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-landscape,0.35);
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-landscape,0.65);
     }
     @at-root .divisions__card--solar &{
-        box-shadow: 0 rem(18) rem(40) rem(-12) transparentize($color-solar,0.35);
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-solar,0.45);
     }
 
 }
 
 .divisions__card__svg{
     position: absolute;
-    top: 0;
+    top: rem(1);
     bottom: 0;
-    left: 0;
+    left: rem(2);
     right: 0;
     margin: auto;
     width: 20%;

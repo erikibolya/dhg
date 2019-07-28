@@ -3,4 +3,5 @@
 .main{
     @include linear-interpolation-chain(margin-top, $header-heights);
     flex-grow: 1;
+    margin-bottom: rem(120);
 }

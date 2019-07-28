@@ -101,7 +101,8 @@ body {
 
 .main {
   margin-top: calc(3.215vw + 3.5095rem);
-  flex-grow: 1; }
+  flex-grow: 1;
+  margin-bottom: 7.5rem; }
   @media (min-width: 120em) {
     .main {
       margin-top: 7.3675rem; } }
@@ -150,7 +151,7 @@ body {
 
 @media (min-width: 56.25em) {
   .info__description {
-    margin-right: 4em; } }
+    margin-right: 6em; } }
 
 .info__contacts {
   margin: auto;
@@ -355,19 +356,19 @@ body {
   background-color: #ffffff;
   transform: translateY(50%); }
   .divisions__card--developing .divisions__card__button {
-    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(13, 86, 165, 0.65); }
+    box-shadow: 0 1rem 2.5rem -0.625rem rgba(13, 86, 165, 0.55); }
   .divisions__card--finance .divisions__card__button {
-    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(253, 184, 19, 0.65); }
+    box-shadow: 0 1rem 2.5rem -0.625rem rgba(253, 184, 19, 0.55); }
   .divisions__card--landscape .divisions__card__button {
-    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(141, 198, 63, 0.65); }
+    box-shadow: 0 1rem 2.5rem -0.625rem rgba(141, 198, 63, 0.35); }
   .divisions__card--solar .divisions__card__button {
-    box-shadow: 0 1.125rem 2.5rem -0.75rem rgba(237, 28, 36, 0.65); }
+    box-shadow: 0 1rem 2.5rem -0.625rem rgba(237, 28, 36, 0.55); }
 
 .divisions__card__svg {
   position: absolute;
-  top: 0;
+  top: 0.0625rem;
   bottom: 0;
-  left: 0;
+  left: 0.125rem;
   right: 0;
   margin: auto;
   width: 20%; }
@@ -385,5 +386,48 @@ body {
     fill: #8dc63f; }
   .divisions__card--solar .svg--arrow .svg__path {
     fill: #ed1c24; }
+
+.footer {
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1.7857142857vw + 0.5803571429rem);
+  padding-right: calc(1.7857142857vw + 0.5803571429rem);
+  font-size: calc(0.2272727273vw + 0.7045454545rem);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 37.5em) {
+    .footer {
+      padding-left: calc(3.3333333333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .footer {
+      padding-left: calc(3.3333333333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .footer {
+      padding-left: 2.5rem; } }
+  @media (min-width: 37.5em) {
+    .footer {
+      padding-right: calc(3.3333333333vw + 0rem); } }
+  @media (min-width: 56.25em) {
+    .footer {
+      padding-right: calc(3.3333333333vw + 0rem); } }
+  @media (min-width: 75em) {
+    .footer {
+      padding-right: 2.5rem; } }
+  @media (min-width: 75em) {
+    .footer {
+      font-size: 0.875rem; } }
+
+.footer__img {
+  width: 12em;
+  opacity: 0.2; }
+
+.footer__text {
+  color: #d1d1d1;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
