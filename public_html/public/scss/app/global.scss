@@ -1,6 +1,9 @@
 
 html{
     font-family: $font-sans-serif;
+    letter-spacing: $font-sans-serif-letter-spacing;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     font-size: 100%;
 }

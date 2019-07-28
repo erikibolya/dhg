@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext'); //Lato - sans-serif, regular
 
 $font-sans-serif: 'Lato',Verdana, sans-serif;
+$font-sans-serif-letter-spacing: 0.01em;
+
 $font-serif: 'Lora',Georgia, serif;
 
 //-----z-indexes--
@@ -11,7 +13,7 @@ header: 100
 );
 
 $color-primary: #000000;
-$color-primary-light: #d1d1d1;
+$color-primary-light: #949494;
 $color-secondary: #ffffff;
 $color-secondary-dark: #fcfcfc;
 $color-terciary: #00a6e7;
