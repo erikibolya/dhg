@@ -7,8 +7,8 @@
     top: 0;
     left: 0;
     background-color: $header-background-color;
-    @include linear-interpolation-chain(padding-top, $header-spacings);
-    @include linear-interpolation-chain(padding-bottom, $header-spacings);
+    height: rem(120);
+
 
     @include linear-interpolation-chain(font-size,(
     1920: 18,
@@ -19,6 +19,7 @@
 
 .header__container{
     @include container-custom($header-container-max-width,$header-container-inner-paddings);
+    height: 100%;
     align-items: center;
     justify-content: space-between;
 }
