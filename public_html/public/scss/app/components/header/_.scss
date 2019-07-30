@@ -8,10 +8,6 @@
     left: 0;
     background-color: $header-background-color;
     @include linear-interpolation-chain(height,$header-heights);
-    @include linear-interpolation-chain(font-size,(
-    1920: 18,
-        xl: 12
-        ));
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
 }
 

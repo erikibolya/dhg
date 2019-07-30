@@ -1,18 +1,19 @@
-@font-face {
-    font-family: "SofiaPro", sans-serif;
-    src: url("SofiaPro-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Proxima", sans-serif;
-    src: url("ProximaNova-Regular.woff") format("woff"); 
+@font-face{
+    font-family: "SofiaPro";
+    src: url("../fonts/SofiaPro-Regular.woff");
 }
 
 
-$font-sans-serif: "Proxima", sans-serif;
-$font-sans-serif-letter-spacing: 0.00em;
+@font-face{
+    font-family: "ProximaNova";
+    src: url("../fonts/ProximaNova-Regular.woff");
+}
 
-$font-sans-serif-heading: "SofiaPro", sans-serif;
+
+$font-sans-serif: "ProximaNova";
+$font-sans-serif-letter-spacing: -0.02em; //pryč
+
+$font-sans-serif-heading:"SofiaPro";
 
 
 

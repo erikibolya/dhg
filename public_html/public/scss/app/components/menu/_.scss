@@ -2,9 +2,15 @@
 
 .menu{
     display: none;
+
     @include media($menu-breakpoint){
-        display: block;
+        display: block;;
     }
+
+    @include linear-interpolation-chain(font-size,(
+    1920: 18,
+        xl: 12
+        ));
 }
 
 .menu__item{
