@@ -8,6 +8,7 @@
 }
 
 .menu__item{
+    font-family: $font-sans-serif-heading;
     color: $menu-color;
     text-decoration: none;
     &:not(:last-of-type){

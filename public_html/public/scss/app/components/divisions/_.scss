@@ -2,7 +2,7 @@
 
 
 .divisions{
-    @include container-custom($layout-container-max-width,(xl:40,s:20));
+    @include container-custom($layout-container-max-width,(xl:40,s:25));
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -50,7 +50,12 @@
 
 .divisions__card__paragraph{
     @include linear-interpolation-chain(margin-top,$divisions-paragraph-spacings);
+    @include linear-interpolation-chain(font-size, $divisions-card-paragraph-font-sizes);
+    color: $divisions-card-paragraph-color;
+    display: block;
+    line-height: 2;
     margin-bottom: 0;
+
 }
 
 .divisions__card__button{

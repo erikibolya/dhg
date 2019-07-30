@@ -6,14 +6,30 @@
     display: block;
     line-height: 2;
     margin: 0;
-    margin-bottom: 2em;
-    
-    
-    > b{
+    margin-bottom: 3.5em;
+
+
+    > u{
         background-color: transparent;
-        color: $paragraph-color-highlighted;
-        text-decoration: underline;
-        font-weight: normal;
+        text-decoration: none;
+        border-bottom: rem(1) currentColor solid;
+        padding-bottom: rem(1);
+
+        @at-root .main--about &{
+            color: $color-about
+        }
+        @at-root .main--developing &{
+            color: $color-developing
+        }
+        @at-root .main--finance &{
+            color: $color-finance;
+        }
+        @at-root .main--landscape &{
+            color: $color-landscape
+        }
+        @at-root .main--solar &{
+            color: $color-solar;
+        }
     }
-    
+
 }

@@ -14,8 +14,11 @@
 }
 
 .contacts__heading{
-    color: $contacts-heading-color;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.7em;
+    @include media($info-breakpoint){
+        margin-bottom: 2.5em;
+        color: $contacts-heading-color;
+    }
 }
 
 .contacts__line{
@@ -40,6 +43,7 @@
 .contacts__table__cell{
     padding-bottom: 0.8em;
     &:first-child{
+        width: rem(75);
         color: $contacts-color-dark;
         @at-root .main--developing &{
             color: $color-developing;
@@ -55,6 +59,9 @@
         }
         @at-root .main--about &{
             color: $color-about;
+        }
+        @include media($info-breakpoint){
+            width: auto;
         }
     }
 
