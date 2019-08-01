@@ -5,21 +5,19 @@
 
 
 .svg--arrow{
-
-
     .svg__path{
         stroke: $color-primary;
 
-        @at-root .divisions__card--developing &{
+        @at-root .division-developing &{
             stroke: $color-developing;
         }
-        @at-root .divisions__card--finance &{
+        @at-root .division-finance &{
             stroke: $color-finance;
         }
-        @at-root .divisions__card--landscape &{
+        @at-root .division-landscape &{
             stroke: $color-landscape;
         }
-        @at-root .divisions__card--solar &{
+        @at-root .division-solar &{
             stroke: $color-solar;
         }
     }

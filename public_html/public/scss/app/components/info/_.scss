@@ -5,7 +5,7 @@
     @include container;
     align-items: flex-start;
     justify-content: space-between;
-    @include linear-interpolation-chain(padding-top,(xl: 80, s: 64));
+    @include linear-interpolation-chain(padding-top,(xl: 100, s: 64));
     @include linear-interpolation-chain(padding-bottom,(xl: 80, s: 64));
     flex-direction: column;
     @include media($info-breakpoint){
@@ -16,9 +16,11 @@
 .info__logo{
     @include linear-interpolation-chain(width, $info-logo-widths);
     margin-bottom: rem(80);
-    display: none;
-    @include media($menu-breakpoint){
-        display: block;;
+    &--hide{
+        display: none;
+        @include media($menu-breakpoint){
+            display: block;;
+        }
     }
 }
 
@@ -31,7 +33,9 @@
 }
 
 .info__description{
+    margin-bottom: rem(50);
     @include media($info-breakpoint){
+        margin-bottom: rem(50);
         margin-right: $info-description-spacing * 1em;
     }
 }

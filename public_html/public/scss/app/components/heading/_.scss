@@ -30,6 +30,16 @@
 .heading__light{
     opacity: 0.4;
 }
+
+.heading__breadcrumb{
+    color: #e0e0e0;
+    @include linear-interpolation-chain(font-size,(xl:24,s:16.5));
+}
+
+.heading__text{
+    margin-right: 0.5em;
+}
+
 @for $i from 1 through 6{
     #{".heading--"+$i}{
         @include heading("h"+$i);

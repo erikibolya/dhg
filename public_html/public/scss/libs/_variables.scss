@@ -16,8 +16,9 @@ xl: $layout-container-max-width //desktop up
 );
 
 $media-breakpoints-map-v: (
-s: 600,
-xl: 900
+xl: 1080,
+l: 900,
+s: 600
 );
 
 $media-rules-map: (
@@ -31,7 +32,7 @@ ar: "min-aspect-ratio"
 //fonts
 $font-sizes:(
 xxl:(xl:46,s:36),
-xl:(xl:30,s:30),
+xl:(xl:40,s:30),
 l:(xl:32,s:26),
 m:(xl:26,s:22),
 s:(xl:18,s:16),

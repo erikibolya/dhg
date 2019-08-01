@@ -16,7 +16,8 @@
 .divisions__heading{
     text-transform: none;
     width: 100%;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.7em;
+    @include linear-interpolation-chain(padding-left,(xl:0,s:10));
 }
 
 .divisions__breadcrumb{
@@ -68,16 +69,16 @@
     background-color: $color-secondary;
     transform: translateY(50%);
 
-    @at-root .divisions__card--developing &{
+    @at-root .division-developing &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-developing,0.55);
     }
-    @at-root .divisions__card--finance &{
+    @at-root .division-finance &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-finance,0.55);
     }
-    @at-root .divisions__card--landscape &{
+    @at-root .division-landscape &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-landscape,0.35);
     }
-    @at-root .divisions__card--solar &{
+    @at-root .division-solar &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-solar,0.55);
     }
 

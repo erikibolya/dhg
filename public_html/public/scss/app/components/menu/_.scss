@@ -1,24 +1,65 @@
 @import "variables.scss";
 
 .menu{
+    z-index: z-index(menu);
     display: none;
-
-    @include media($menu-breakpoint){
-        display: block;;
-    }
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding-top: rem(50);
+    @include linear-interpolation-chain(padding-left,(xl:40,s:25));
+    @include linear-interpolation-chain(top,(
+    1920: 120,
+        s: 60
+        ));
 
     @include linear-interpolation-chain(font-size,(
-    1920: 18,
-        xl: 12
+    1600: 18,
+        xl: (17 22),
+        s: 20
         ));
+    
+    @include media($menu-breakpoint){
+        z-index: auto; 
+        display: flex;
+        width: auto;
+        bottom: auto;
+        left: auto;
+        top: auto;
+        padding-top: 0;
+        padding-left: 0;
+        flex-direction: row;
+        position: relative;
+    }
+
+    @include media(1600){
+        justify-content: space-between;
+        width: 100%;
+    }
+
 }
 
 .menu__item{
     font-family: $font-sans-serif-heading;
-    color: $menu-color;
+    color: $color-primary;
     text-decoration: none;
-    &:not(:last-of-type){
-        margin-right: 3em;
+    margin-bottom: 1em;
+
+    @include media($menu-breakpoint){
+        margin-bottom: 0;
+        color: $menu-color;
+        &:not(:last-of-type){
+            margin-right: 2em;
+        }
+    }
+
+    @include media(1600){
+        &:not(:last-of-type){
+            margin-right: 0em;
+        }
     }
 
     &:hover,&--active{

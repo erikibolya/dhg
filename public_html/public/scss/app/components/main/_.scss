@@ -4,4 +4,9 @@
     @include linear-interpolation-chain(margin-top, $header-heights);
     @include linear-interpolation-chain(margin-bottom, $main-margins-bottom);
     flex-grow: 1;
+
+    &--homepage{
+        display: flex;
+        margin-bottom: 0;
+    }
 }

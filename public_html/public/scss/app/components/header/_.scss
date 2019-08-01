@@ -12,7 +12,7 @@
 }
 
 .header__container{
-    @include container-custom($header-container-max-width,$header-container-inner-paddings);
+    @include container-custom($layout-container-max-width,(xl:40,s:25));
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -20,8 +20,27 @@
 
 
 .header__logo{
-    width: 10.3em;
+    display: block;
+    text-decoration: none;
     min-width: rem(120);
+    @include linear-interpolation-chain(left, (
+    3840: 575,
+        1600: 25
+        ),true);
+    @include linear-interpolation-chain(width, (
+    1920: 170,
+        1600: (150 170),
+        1200: 150
+        ));
+
+    @include media(1600){
+        position: absolute;
+    }
+}
+
+.header__logo__img{
+    width: 100%;
+    display: block;
 }
 
 .header__hamburger{

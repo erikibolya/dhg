@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+.homepage{
+    @include container-custom($homepage-container-width, (xl:0,s:0));
+    align-items: center;
+}
+
+.homepage__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    @include linear-interpolation-chain(padding-left,$homepage-item-paddings-horizontal);
+    @include linear-interpolation-chain(padding-right,$homepage-item-paddings-horizontal);
+    max-height: rem(1080);
+}
+
+.homepage__illustration{
+    /*margin-top: auto;*/
+    width: 100%;
+    display: block;
+    margin-bottom: rem(70);
+
+}
+
+.homepage__logo{
+    /*margin-top: auto;*/
+    width: 70%;
+    display: block;
+    margin-bottom: rem(50);
+}
+
+.homepage__paragraph{
+    width: 100%;
+    text-align: justify;
+    @include linear-interpolation-chain(font-size,$homepage-paragraph-font-sizes);
+    /*margin-bottom: 60px;*/
+    @include linear-interpolation-chain(margin-bottom,(xl: 60,l: 50),true,"vh");
+
+}
+
+.homepage__link{
+    cursor: pointer;
+    position: relative;
+    width: rem(60);
+    display: block;
+    margin-top: auto;
+    bottom: 0;
+    @include border-radius(50%); 
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+    background-color: $color-secondary;
+    @include linear-interpolation-chain(margin-bottom,(xl: 60,l: 50),true,"vh");
+
+    @at-root .division-developing &{
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-developing,0.55);
+    }
+    @at-root .division-finance &{
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-finance,0.55);
+    }
+    @at-root .division-landscape &{
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-landscape,0.35);
+    }
+    @at-root .division-solar &{
+        box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-solar,0.55);
+    }
+}
+
+.homepage__link__svg{
+    position: absolute;
+    top: rem(1);
+    bottom: 0;
+    left: rem(2);
+    right: 0;
+    margin: auto;
+    width: 20%;
+}

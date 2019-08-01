@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.table{
+    width: 100%;
+}
+
+.table__row{
+    &:last-child{
+        .table__cell{
+            padding-bottom: 0;
+        }
+    }
+}
+
+.table__cell{
+    text-decoration: none;
+    padding-bottom: 0.8em;
+    &:first-child{
+        width: rem(75);
+        color: $table-color-dark;
+
+        @at-root .main--developing .table--color &{
+            color: $color-developing;
+        }
+        @at-root .main--finance .table--color &{
+            color: $color-finance;
+        }
+        @at-root .main--landscape .table--color &{
+            color: $color-landscape;
+        }
+        @at-root .main--solar .table--color &{
+            color: $color-solar;
+        }
+        @at-root .main--about .table--color &{
+            color: $color-about;
+        }
+
+        @at-root .table--info &{
+            @include media($info-breakpoint){
+                width: auto;
+            }
+        }
+
+
+    }
+
+    @at-root .table__row--space &{
+        padding-bottom: 2em;
+    }
+}

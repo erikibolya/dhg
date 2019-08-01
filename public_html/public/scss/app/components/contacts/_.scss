@@ -8,15 +8,31 @@
     @at-root &.info__contacts{
         padding: 0;
         @include media($info-breakpoint){
+            padding: rem(60) rem(55);
+        }
+    }
+    @at-root &.invests__contacts{
+        padding: 0;
+        @include media($invests-breakpoint){
             padding: rem(40) rem(55);
         }
+    }
+}
+
+.contacts__logo{
+    display: none;
+    width: 100%;
+    margin-bottom: 1.7em;
+    opacity: 0.1;
+    @include media($invests-breakpoint){
+        display: block;
     }
 }
 
 .contacts__heading{
     margin-bottom: 1.7em;
     @include media($info-breakpoint){
-        margin-bottom: 2.5em;
+        margin-bottom: 1.25em;
         color: $contacts-heading-color;
     }
 }

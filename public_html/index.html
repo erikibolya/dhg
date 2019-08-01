@@ -16,140 +16,82 @@ and open the template in the editor.
     <body>
         <header class="header">
             <div class="header__container">
-                <img class="header__logo" src="public/img/dhg-logo.png">
+                <a href="index.html" class="header__logo">
+                    <img class="header__logo__img" src="public/img/dhg-logo.svg">
+                </a>
                 <svg class="header__hamburger" x="0px" y="0px"
                      width="26" height="26"
                      viewBox="0 0 26 26"
                      style=" fill:#000000;"><g id="surface1"><path style=" " d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z "></path></g></svg>
                 <div class="header__menu menu">
-                    <a class="menu__item menu__item--developing" href="#">DH Developing & Construction</a>
-                    <a class="menu__item menu__item--landscape" href="#">DH Landscape Invest</a>
-                    <a class="menu__item menu__item--solar" href="#">DH Solar Energy</a>
-                    <a class="menu__item menu__item--finance" href="#">DH Finance</a>
-                    <a class="menu__item menu__item--about" href="#">About us</a>
-                    <a class="menu__item" href="#">Contact</a>
+                    <a class="menu__item menu__item--developing" href="developing.html">DH Developing & Construction</a>
+                    <a class="menu__item menu__item--landscape" href="landscape.html">DH Landscape Invest</a>
+                    <a class="menu__item menu__item--solar" href="solar.html">DH Solar Energy</a>
+                    <a class="menu__item menu__item--finance" href="finance.html">DH Finance</a>
+                    <a class="menu__item menu__item--about" href="about.html">About us</a>
+                    <a class="menu__item" href="contact.html">Contact</a>
                 </div>
-                <div class="header__languages languages">
-                    <a class="languages__item" href="#">
-                        <img class="languages__flag" src="public/img/flag-sk.png">
-                    </a>
-                    <a class="languages__item" href="#">
-                        <img class="languages__flag" src="public/img/flag-sk.png">
-                    </a>
-                </div>
+
             </div>
         </header>
-        <main class="main main--about">
-            <section class="info">
-                <div class="info__description">
-                    <img class="info__logo" src="public/img/dhg-logo.svg">
-                    <h2 class="info__heading heading heading--2">
-                        <span class="heading__light">Naše projekty zvyšujú kvalitu</span> života a budujú infraštruktúru.
-                    </h2>
-                    <div class="info__paragraph paragraph">
-                        Investičná spoločnosť DH Group drží krok s aktuálnymi spoločenskými trendmi - <u>angažuje sa v oblasti výskumu v ekologickom poľnohospodárstve, či hľadaní alternatívnych zdrojov výroby energie.</u> Jej zameranie je rozšírené aj o oblasť developmentu a prieskumu finančného trhu spojeného s investíciami do finančných fondov. 
+        <main class="main main--homepage">
+            <section class="homepage">
+                <div class="homepage__item division-developing">
+                    <img class="homepage__illustration" src="public/img/illustration-developing.svg">
+                    <img class="homepage__logo" src="public/img/dh-developing-logo.svg">
+                    <div class="homepage__paragraph paragraph">
+                        Spoločnosť sa angažuje v developerských a stavebných projektoch v rôznych fázach od identifikácie investičnej príležitosti, cez návrh a nákup až po realizáciu a ich následnú správu.
                     </div>
-                    <div class="info__paragraph paragraph">
-                        Založená bola v roku RRRR ako materská firma zastrešujúca štyri spoločnosti: DH Solar Energy, DH Landscape Invest, DH Developing a DH Finance, ktoré sa venujú projektom zvyšujúcim kvalitu života a budujúcim infraštruktúru. Profesionalita manažmentu a zamestnancov v spojení s dynamikou firmy zabezpečujú vysokú úroveň a bezproblémovú kvalitu spolupráce.
-                    </div>
-                </div>
-                <div class="info__contacts contacts">
-                    <h2 class="contacts__heading heading heading--2">
-                        Kontakt
-                    </h2>
-                    <div class="contacts__block">
-                        <div class="contacts__line contacts__line--dark">
-                            DH Groupm, a.s.
-                        </div>
-                        <div class="contacts__line">
-                            Králova pri Senci 399
-                        </div>
-                    </div>
-                    <table class="contacts__table" border="0" cellspacing="0" cellpadding="0">
-                        <tr class="contacts__table__row">
-                            <td class="contacts__table__cell">IČO:</td><td class="contacts__table__cell">35 934 336</td>
-                        </tr>
-                        <tr class="contacts__table__row">
-                            <td class="contacts__table__cell">DIČ:</td><td class="contacts__table__cell">2020202020</td>
-                        </tr>
-                        <tr class="contacts__table__row contacts__table__row--space">
-                            <td class="contacts__table__cell">IČ DPH:</td><td class="contacts__table__cell">SK2020202020</td>
-                        </tr>
-                        <tr class="contacts__table__row">
-                            <td class="contacts__table__cell">mobil:</td><td class="contacts__table__cell">+421 904 588 758</td>
-                        </tr>
-                        <tr class="contacts__table__row">
-                            <td class="contacts__table__cell">e-mail:</td><td class="contacts__table__cell">dhsolar@dhg.sk</td>
-                        </tr>
-                        <tr class="contacts__table__row">
-                            <td class="contacts__table__cell">web:</td><td class="contacts__table__cell">www.dhg.sk</td>
-                        </tr>
-                    </table>
-                </div>
-            </section> 
-            <section class="divisions">
-                <h2 class="divisions__heading heading heading--2">
-                    Divízie DH Group
-                </h2>
-                <div class="divisions__card divisions__card--developing">
-                    <img class="divisions__card__logo" src="public/img/dh-developing-logo.svg">
-                    <div class="divisions__card__paragraph">
-                        Aenean in bibendum ligula, efficitur facilisis mauris. Phasellus 
-                        molestie porta finibus. Sed lorem ligula, pulvinar vel fermentum sed, viverra quis libero. Ut dictum ante ac nulla eleifend tincidunt.
-                    </div>
-                    <a href="#" class="divisions__card__button">
+                    <a class="homepage__link">
                         <img class="ratio-keeper" src="public/img/ratio-keepers/1x1.png">
-                        <svg class="divisions__card__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
+                        <svg class="homepage__link__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
                         <polyline class="svg__path" fill="none" stroke-width="65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="32.5,413.3 225.9,222.8 32.5,32.5 "/>
                         </svg>
                     </a>
                 </div>
-                <div class="divisions__card divisions__card--landscape">
-                    <img class="divisions__card__logo" src="public/img/dh-landscape-logo.svg">
-                    <div class="divisions__card__paragraph">
-                        Aenean in bibendum ligula, efficitur facilisis mauris. Phasellus 
-                        molestie porta finibus. Sed lorem ligula, pulvinar vel fermentum sed, viverra quis libero. Ut dictum ante ac nulla eleifend tincidunt.
+
+                <div class="homepage__item division-solar">
+                    <img class="homepage__illustration" src="public/img/illustration-solar.svg">
+                    <img class="homepage__logo" src="public/img/dh-solar-logo.svg">
+                    <div class="homepage__paragraph paragraph">
+                        Spoločnosť v záujme trendu hľadania alternatívnych zdrojov pri výrobe elektrickej energie investuje do obnoviteľných zdrojov energie a zabezpečuje predaj solárnych panelov a fotovoltaických komponentov.
                     </div>
-                    <a href="#" class="divisions__card__button">
+                    <a class="homepage__link">
                         <img class="ratio-keeper" src="public/img/ratio-keepers/1x1.png">
-                        <svg class="divisions__card__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
+                        <svg class="homepage__link__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
                         <polyline class="svg__path" fill="none" stroke-width="65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="32.5,413.3 225.9,222.8 32.5,32.5 "/>
                         </svg>
                     </a>
                 </div>
-                <div class="divisions__card divisions__card--solar">
-                    <img class="divisions__card__logo" src="public/img/dh-solar-logo.svg">
-                    <div class="divisions__card__paragraph">
-                        Aenean in bibendum ligula, efficitur facilisis mauris. Phasellus 
-                        molestie porta finibus. Sed lorem ligula, pulvinar vel fermentum sed, viverra quis libero. Ut dictum ante ac nulla eleifend tincidunt.
+
+                <div class="homepage__item division-landscape">
+                    <img class="homepage__illustration" src="public/img/illustration-landscape.svg">
+                    <img class="homepage__logo" src="public/img/dh-landscape-logo.svg">
+                    <div class="homepage__paragraph paragraph">
+                        Okrem pestovania poľnohospodárskych plodín sa spoločnosť zaoberá výskumom nových procesov v pestovaní potravín a krmovín ekologickou cestou a jeho aplikovaním do praxe.
                     </div>
-                    <a href="#" class="divisions__card__button">
+                    <a class="homepage__link">
                         <img class="ratio-keeper" src="public/img/ratio-keepers/1x1.png">
-                        <svg class="divisions__card__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
+                        <svg class="homepage__link__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
                         <polyline class="svg__path" fill="none" stroke-width="65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="32.5,413.3 225.9,222.8 32.5,32.5 "/>
                         </svg>
                     </a>
                 </div>
-                <div class="divisions__card  divisions__card--finance">
-                    <img class="divisions__card__logo" src="public/img/dh-finance-logo.svg">
-                    <div class="divisions__card__paragraph">
-                        Aenean in bibendum ligula, efficitur facilisis mauris. Phasellus 
-                        molestie porta finibus. Sed lorem ligula, pulvinar vel fermentum sed, viverra quis libero. Ut dictum ante ac nulla eleifend tincidunt.
+
+                <div class="homepage__item division-finance">
+                    <img class="homepage__illustration" src="public/img/illustration-finance.svg">
+                    <img class="homepage__logo" src="public/img/dh-finance-logo.svg">
+                    <div class="homepage__paragraph paragraph">
+                        Cieľom spoločnosti je nielen analýza finančného trhu a výber správnej investičnej stratégie a nástrojov, ale aj samotné investície v podobe fondov, akcií a cenných papierov.
                     </div>
-                    <a href="#" class="divisions__card__button">
+                    <a class="homepage__link">
                         <img class="ratio-keeper" src="public/img/ratio-keepers/1x1.png">
-                        <svg class="divisions__card__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
+                        <svg class="homepage__link__svg svg svg--arrow" viewBox="0 0 258.4 445.8">
                         <polyline class="svg__path" fill="none" stroke-width="65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="32.5,413.3 225.9,222.8 32.5,32.5 "/>
                         </svg>
                     </a>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <img class="footer__img" src="public/img/dhg-logo-monotone.svg">
-            <span class="footer__text">
-                DHGroup2019
-            </span>
-        </footer>
     </body>
 </html>

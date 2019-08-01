@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.invests{
+    @include container;
+    flex-direction: column;
+}
+
+.invests__heading{
+    text-transform: none;
+    width: 100%;
+    margin-bottom: 2.5em;
+    line-height: 1;
+}
+
+
+.invests__row{
+    display: flex;
+    align-items: center;
+    flex-direction:column-reverse;
+    margin-bottom: rem(70);
+    @include media($invests-breakpoint){
+        flex-direction: row;
+    }
+}
+
+.invests__contacts{
+    margin-right: auto;
+    @include media($invests-breakpoint){
+        flex-shrink: 0;
+        box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+        width: 24em;
+    }
+}
+
+.invests__description{
+    margin-bottom: rem(50);
+    @include media($invests-breakpoint){
+        margin-bottom: 0;
+        margin-left: $invests-description-spacing * 1em;
+    }
+}
+
+.invests__description__heading{
+    text-transform: none;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
