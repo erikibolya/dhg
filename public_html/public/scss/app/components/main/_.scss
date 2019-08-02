@@ -9,4 +9,11 @@
         display: flex;
         margin-bottom: 0;
     }
+    &--contacts{
+        position: relative;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        @include linear-interpolation-chain(padding-top, $header-heights);
+    }
 }

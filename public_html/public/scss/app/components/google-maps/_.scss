@@ -1,5 +1,29 @@
 @import "variables.scss";
 
 .google-map{
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/map.png);
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.google-map__container{
+    @include container;
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.google-map__contacts{
+    top: 50%;
+    margin-left: auto;
+    margin-bottom: rem(100);
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+    width: 25em;
+    background-color: $color-secondary;
 }
