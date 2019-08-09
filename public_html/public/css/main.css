@@ -310,7 +310,7 @@ body {
 
 .info__logo {
   width: calc(14.77273vw + 13.92045rem);
-  margin-bottom: 5rem; }
+  margin-bottom: 4.0625rem; }
   @media (min-width: 75em) {
     .info__logo {
       width: 25rem; } }
@@ -342,6 +342,10 @@ body {
       flex-shrink: 0;
       box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
       width: 25em; } }
+  .main--contacts .info__contacts {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #ffffff; }
 
 .paragraph {
   font-size: calc(0.11364vw + 0.91477rem);
@@ -349,10 +353,13 @@ body {
   display: block;
   line-height: 2;
   margin: 0;
-  margin-bottom: 3.5em; }
+  margin-bottom: 2em; }
   @media (min-width: 75em) {
     .paragraph {
       font-size: 1rem; } }
+  @media (min-width: 56.25em) {
+    .paragraph {
+      margin-bottom: 3.5em; } }
   .paragraph:last-child {
     margin-bottom: 0; }
   .paragraph > u {
@@ -646,6 +653,7 @@ body {
     stroke: #ed1c24; }
 
 .google-map {
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -655,32 +663,6 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 0.5; }
-
-.google-map__container {
-  display: flex;
-  width: 100%;
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(0.56818vw + 2.07386rem);
-  padding-right: calc(0.56818vw + 2.07386rem);
-  position: relative;
-  height: 100%;
-  align-items: center; }
-  @media (min-width: 75em) {
-    .google-map__container {
-      padding-left: 2.5rem; } }
-  @media (min-width: 75em) {
-    .google-map__container {
-      padding-right: 2.5rem; } }
-
-.google-map__contacts {
-  top: 50%;
-  margin-left: auto;
-  margin-bottom: 6.25rem;
-  box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
-  width: 25em;
-  background-color: #ffffff; }
 
 .homepage {
   display: flex;
@@ -784,7 +766,7 @@ body {
   margin-right: auto;
   padding-left: calc(0.56818vw + 2.07386rem);
   padding-right: calc(0.56818vw + 2.07386rem);
-  font-size: calc(0.11364vw + 0.91477rem);
+  font-size: calc(0.34091vw + 0.74432rem);
   padding-top: 2em;
   padding-bottom: 2.5em;
   justify-content: space-between;
@@ -800,10 +782,14 @@ body {
       font-size: 1rem; } }
 
 .footer__img {
-  width: 12em; }
+  width: calc(9.09091vw + 5.05682rem); }
+  @media (min-width: 75em) {
+    .footer__img {
+      width: 11.875rem; } }
 
 .footer__text {
   color: #ededed;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 1em; }
 
 /*# sourceMappingURL=main.css.map */

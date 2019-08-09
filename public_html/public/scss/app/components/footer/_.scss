@@ -3,7 +3,10 @@
 
 .footer{
     @include container();
-    @include fluid-font($footer-font-size);
+    @include linear-interpolation-chain(font-size, (
+    xl: 16,
+        s: 13
+        ));
     padding-top: 2em;
     padding-bottom: 2.5em;
     justify-content: space-between;
@@ -11,10 +14,14 @@
 }
 
 .footer__img{
-    width: 12em;
+    @include linear-interpolation-chain(width, (
+    xl: 190,
+        s: 110
+        ));
 }
 
 .footer__text{
     color: $footer-font-color;
     font-weight: bold;
+    margin-top: 1em;
 }

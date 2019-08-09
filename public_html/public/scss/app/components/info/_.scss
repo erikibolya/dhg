@@ -15,7 +15,7 @@
 
 .info__logo{
     @include linear-interpolation-chain(width, $info-logo-widths);
-    margin-bottom: rem(80);
+    margin-bottom: rem(65);
     &--hide{
         display: none;
         @include media($menu-breakpoint){
@@ -47,5 +47,11 @@
         flex-shrink: 0;
         box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
         width: 25em;
+    }
+
+    @at-root .main--contacts &{
+        margin-left: auto;
+        margin-right: 0;
+        background-color: $color-secondary;
     }
 }

@@ -6,8 +6,11 @@
     display: block;
     line-height: 2;
     margin: 0;
-    margin-bottom: 3.5em;
-    
+    margin-bottom: 2em;
+    @include media(l){
+        margin-bottom: 3.5em;
+    }
+
     &:last-child{
         margin-bottom: 0;
     }
