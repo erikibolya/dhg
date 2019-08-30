@@ -5,6 +5,25 @@
     @include linear-interpolation-chain(font-size,(xl: 15, s:13));
     margin-top: auto;
     margin-bottom: auto;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em 2em;
+    @include border-radius-top-right(rem(30));
+    @include border-radius-bottom-right(rem(30));
+    @include linear-interpolation-chain(padding-left,$layout-container-inner-paddings);
+    transform: translateY(50%);
+    /*@include material-box-shadow(4);*/
+}
+.topnav__extension{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: $color-secondary;
+    transform: translateX(-100%);
 }
 
 .topnav__item{

@@ -2,7 +2,9 @@
 
 
 .divisions{
-    @include container-custom($layout-container-max-width,(xl:40,s:25));
+    display: flex;
+    width: 100%;
+    /*@include container-custom($layout-container-max-width,(xl:40,s:25));*/
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,6 +42,12 @@
 
 
     @include media(l){
+        width: 46%;
+    }
+    @include media($sidebar-breakpoint){
+        width: 100%;
+    }
+    @include media(1300){
         width: 46%;
     }
 }

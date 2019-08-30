@@ -17,13 +17,16 @@
     display: flex;
     color: $color-primary;
     text-decoration: none;
-    margin-bottom: 2em;
-    &:hover{
+    margin-bottom: 3em;
+    &--main{
+        margin-bottom: 6em;
+    }
+    &:not(.sidenav__item--main):hover{
         .sidenav__logo{
-            transform: translateX(rem(20));
+            transform: translateX(rem(5));
         }
         .sidenav__text{
-            transform: translateX(rem(20));
+            transform: translateX(rem(5));
         }
     }
 }

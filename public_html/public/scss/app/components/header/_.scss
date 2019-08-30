@@ -13,6 +13,27 @@
     @include linear-interpolation-chain(height,$header-heights);
 
     @include media($sidebar-breakpoint){
+        background-color: transparent;
         @include linear-interpolation-chain(padding-left, $sidebar-widths); 
     }
+}
+
+.header__logo{
+    width: rem(150);
+    align-self: center;
+    @include media($sidebar-breakpoint){
+        display: none;
+    }
+}
+
+.header__hamburger{
+    align-self: center;
+    margin-left: auto;
+    @include media($sidebar-breakpoint){
+        display: none;
+    }
+}
+
+.header__hamburger__svg{
+    width: rem(30);
 }

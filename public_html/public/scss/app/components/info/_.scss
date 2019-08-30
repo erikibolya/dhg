@@ -5,15 +5,18 @@
     position: relative;
     @include container-pl;
     margin-left: 0;
-
     align-items: flex-start;
     justify-content: space-between;
     @include linear-interpolation-chain(top,(xl: 60, s: 60));
     @include linear-interpolation-chain(padding-bottom,(xl: 80, s: 64));
     flex-direction: column;
+
     @include media($info-breakpoint){
         flex-direction: row;
         padding-right: 35%;
+        @at-root .page--about &{
+            padding-right: 0;
+        }
     }
 
 }
@@ -21,21 +24,12 @@
 .info__logo{
     @include linear-interpolation-chain(width, $info-logo-widths);
     max-width: 100%;
-    margin-bottom: rem(75);
-    &--hide{
-        display: none;
-        @include media($menu-breakpoint){
-            display: block;;
-        }
-    }
+    margin-bottom: rem(60);
 }
 
 .info__heading{
     line-height: 1.3;
-    margin-bottom: 1.7em;
-    @include media($menu-breakpoint){
-        display: none;
-    }
+    margin-bottom: rem(70)
 }
 .info__paragraph{
     position: relative;
@@ -62,6 +56,9 @@
 
 
     @include media(l){
+        &--small{
+            display: none;
+        }
         &--large{
             display: block;
         }
