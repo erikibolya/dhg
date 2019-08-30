@@ -2,7 +2,7 @@
 
 .topnav{
     display: flex;
-    @include fluid-font(s);
+    @include linear-interpolation-chain(font-size,(xl: 15, s:13));
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -15,7 +15,10 @@
     transition-duration: 500ms;
     transition-timing-function: ease;
     &:not(:last-child){
-        margin-right: 2em;
+        @include linear-interpolation-chain(margin-right,(
+        xl: 100,
+            s:30
+            ));
     }
 
     &:hover,&--active{

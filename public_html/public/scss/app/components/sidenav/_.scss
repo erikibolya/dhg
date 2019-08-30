@@ -5,10 +5,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: rem(22);
+    @include linear-interpolation-chain(font-size,(
+    xl: 22,
+        $sidebar-breakpoint: (17 22),
+        s: 17
+        ));
 }
 
 .sidenav__item{
+    width: 100%;
     display: flex;
     color: $color-primary;
     text-decoration: none;
@@ -36,10 +41,13 @@
 }
 
 .sidenav__languages{
-    color: $color-primary;
+    color: $color-primary-light;
 }
 .sidenav__languages__item{
-    color: $color-primary;
+    color: $color-primary-light;
     text-decoration: none;
+    &:hover,&--active{
+        color: $color-primary;
+    }
 }
 
