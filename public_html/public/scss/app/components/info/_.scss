@@ -2,20 +2,25 @@
 
 
 .info{
-    @include container;
+    position: relative;
+    @include container-pl;
+    margin-left: 0;
+
     align-items: flex-start;
     justify-content: space-between;
-    @include linear-interpolation-chain(padding-top,(xl: 100, s: 64));
+    @include linear-interpolation-chain(top,(xl: 60, s: 60));
     @include linear-interpolation-chain(padding-bottom,(xl: 80, s: 64));
     flex-direction: column;
     @include media($info-breakpoint){
         flex-direction: row;
+        padding-right: 35%;
     }
+
 }
 
 .info__logo{
     @include linear-interpolation-chain(width, $info-logo-widths);
-    margin-bottom: rem(65);
+    margin-bottom: rem(75);
     &--hide{
         display: none;
         @include media($menu-breakpoint){
@@ -36,22 +41,45 @@
     margin-bottom: rem(50);
     @include media($info-breakpoint){
         margin-bottom: rem(50);
-        margin-right: $info-description-spacing * 1em;
     }
 }
 
-.info__contacts{
-    margin-right: auto;
+.info__illustration{
     width: 100%;
-    @include media($info-breakpoint){
-        flex-shrink: 0;
-        box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
-        width: 25em;
+    max-width: rem(400);
+    margin: 0 auto;
+    margin-bottom: rem(40);
+    @include media(l){
+        max-width: none;
+        margin-bottom: 0;
+        position: absolute;
+        top: -6%;
+        right: -10%;
+        width: 44%;
     }
+}
 
-    @at-root .main--contacts &{
-        margin-left: auto;
-        margin-right: 0;
-        background-color: $color-secondary;
+.info__accordion{
+    position: relative;
+    overflow: hidden;
+
+    &.is-active{
+        .info__accordion__button--open{
+            display: none;
+        }
     }
+}
+
+.info__accordion__button{
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: rem(30);
+    background-color: $color-secondary;
+    padding: 0.3em 1em;
+    @include border-radius(rem(20));
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 500ms;
+    box-shadow: 0.3125rem 0 1.25rem 0 rgba(0, 0, 0, 0.05);
+
 }

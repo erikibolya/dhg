@@ -1,8 +1,14 @@
 @import "variables.scss";
 
 .invests{
-    @include container;
+    display: flex;
+    width: 100%;
     flex-direction: column;
+    &--preparing{
+        .invests__row{
+            opacity: 0.2;
+        }
+    }
 }
 
 .invests__heading{

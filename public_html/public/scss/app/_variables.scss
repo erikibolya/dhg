@@ -19,6 +19,7 @@ $font-sans-serif-heading:"SofiaPro";
 
 //-----z-indexes--
 $z-indexes: (
+sidebar: 150,
 header: 100,
 menu: -1,
 
@@ -35,3 +36,17 @@ $color-landscape: #8dc63f;
 $color-solar: #ed1c24;
 $color-finance: #fdb813;
 $color-about: $color-terciary;
+
+
+$sidebar-breakpoint: 1000;
+$sidebar-widths: (
+xl: 380,
+$sidebar-breakpoint: 300
+);
+
+
+
+$header-heights: (
+xl: 80,
+s: 80
+);

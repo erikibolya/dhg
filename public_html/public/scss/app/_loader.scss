@@ -1,16 +1,18 @@
 //import parts of app here
 @import "_variables.scss";
-@import "global.scss";
-@import "utility.scss";
 
 
 //loading app components
 
 @import "components/heading/_.scss";
 
-@import "components/menu/_.scss";
+@import "components/sidebar/_.scss";
 
 @import "components/header/_.scss";
+
+@import "components/topnav/_.scss";
+
+@import "components/sidenav/_.scss";
 
 @import "components/languages/_.scss";
 
@@ -36,4 +38,9 @@
 
 @import "components/footer/_.scss";
 
+//loading global styles
+@import "global.scss";
+@import "utility.scss";
+
 //loading lib components
+

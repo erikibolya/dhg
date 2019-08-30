@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.topnav{
+    display: flex;
+    @include fluid-font(s);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.topnav__item{
+    position: relative;
+    color: $color-primary-light;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    &:not(:last-child){
+        margin-right: 2em;
+    }
+
+    &:hover,&--active{
+        color: $color-primary;
+        .topnav__underline{
+            background-color: $color-primary;
+            transform: scaleX(1);
+        }
+    }
+}
+.topnav__hamburger{
+    margin-left: auto;
+    color: black;
+}
+
+.topnav__underline{
+    position: absolute;
+    bottom: rem(-2);
+    left: 0;
+    width: 100%;
+    height: rem(2);
+    background-color: $color-primary-light;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition-property: transform, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}

@@ -5,6 +5,7 @@ $layout-container-inner-paddings: (
 xl: 40,
 s: 35
 );
+$layout-container-max-width-with-paddings: $layout-container-max-width + (2*map-get($layout-container-inner-paddings,nth(map-keys($layout-container-inner-paddings),1)));
 //!layout
 
 //media
@@ -12,7 +13,7 @@ $media-breakpoints-map: (
 s: 320, //phone up
 m: 600, //tablet portrait up
 l: 900, //tablet landscape up
-xl: $layout-container-max-width //desktop up
+xl: $layout-container-max-width-with-paddings //desktop up
 );
 
 $media-breakpoints-map-v: (

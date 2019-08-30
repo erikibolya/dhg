@@ -2,21 +2,12 @@
 
 
 .contacts{
-    padding: rem(40) rem(55);
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem(60) rem(55);
     color: $contacts-color;
     @include fluid-font(xs);
-    @at-root &.info__contacts{
-        padding: 0;
-        @include media($info-breakpoint){
-            padding: rem(60) rem(55);
-        }
-    }
-    @at-root &.invests__contacts{
-        padding: 0;
-        @include media($invests-breakpoint){
-            padding: rem(40) rem(55);
-        }
-    }
+    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
 }
 
 .contacts__logo{
@@ -30,11 +21,16 @@
 }
 
 .contacts__heading{
+    width: 100%;
     margin-bottom: 1.7em;
     @include media($info-breakpoint){
         margin-bottom: 1.25em;
         color: $contacts-heading-color;
     }
+}
+
+.contacts__col{
+    width: 33%;
 }
 
 .contacts__line{
@@ -61,23 +57,20 @@
     &:first-child{
         width: rem(75);
         color: $contacts-color-dark;
-        @at-root .main--developing &{
+        @at-root .page--developing &{
             color: $color-developing;
         }
-        @at-root .main--finance &{
+        @at-root .page--finance &{
             color: $color-finance;
         }
-        @at-root .main--landscape &{
+        @at-root .page--landscape &{
             color: $color-landscape;
         }
-        @at-root .main--solar &{
+        @at-root .page--solar &{
             color: $color-solar;
         }
-        @at-root .main--about &{
+        @at-root .page--about &{
             color: $color-about;
-        }
-        @include media($info-breakpoint){
-            width: auto;
         }
     }
 

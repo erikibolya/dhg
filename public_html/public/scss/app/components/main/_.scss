@@ -1,19 +1,30 @@
 @import "variables.scss";
 
 .main{
-    @include linear-interpolation-chain(margin-top, $header-heights);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: rem($layout-container-max-width-with-paddings);
+    @include linear-interpolation-chain(padding-left,$layout-container-inner-paddings);
+    @include linear-interpolation-chain(padding-right,$layout-container-inner-paddings);
+    @include linear-interpolation-chain(padding-top, $header-heights);
+    margin-left: auto;
+    margin-right: auto;
     @include linear-interpolation-chain(margin-bottom, $main-margins-bottom);
     flex-grow: 1;
+
+    &--compact{
+        padding-top: 0;
+        margin-bottom: 0;
+    }
 
     &--homepage{
         display: flex;
         margin-bottom: 0;
     }
-    &--contacts{
-        position: relative;
-        height: 100vh;
-        margin-top: 0;
-        margin-bottom: 0;
-        @include linear-interpolation-chain(padding-top, $header-heights);
+
+    @include media($sidebar-breakpoint){
+
     }
 }

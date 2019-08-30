@@ -21,4 +21,9 @@ body{
     flex-direction: column;
     color: $color-secondary-dark;
     background-color: $color-secondary;
+    overflow-x: hidden;
+    @include media($sidebar-breakpoint){
+        @include linear-interpolation-chain(padding-left, $sidebar-widths); 
+    }
+
 }

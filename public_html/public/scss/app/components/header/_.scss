@@ -2,50 +2,17 @@
 
 .header{
     z-index: z-index(header);
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $header-background-color;
-    @include linear-interpolation-chain(height,$header-heights);
-    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
-}
-
-.header__container{
-    @include container-custom($layout-container-max-width,(xl:40,s:25));
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.header__logo{
-    display: block;
-    text-decoration: none;
-    min-width: rem(120);
-    @include linear-interpolation-chain(left, (
-    3840: 575,
-        1600: 25
-        ),true);
-    @include linear-interpolation-chain(width, (
-    1920: 170,
-        1600: (150 170),
-        1200: 150
-        ));
-
-    @include media(1600){
-        position: absolute;
-    }
-}
-
-.header__logo__img{
     width: 100%;
-    display: block;
-}
+    background-color: $color-secondary;
 
-.header__hamburger{
-    display: block;
-    @include media($menu-breakpoint){
-        display: none;
+    @include linear-interpolation-chain(height,$header-heights);
+
+    @include media($sidebar-breakpoint){
+        @include linear-interpolation-chain(padding-left, $sidebar-widths); 
     }
 }

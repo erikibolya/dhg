@@ -12,29 +12,312 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <link rel="stylesheet" href="public/css/main.css">
         <link rel="stylesheet" href="public/css/normalize.css">
+        <script src="https://unpkg.com/accordion-js@2.7.3/dist/accordion.min.js"></script>
+        <style>
+
+        </style>
     </head>
-    <body class="">
+    <body class="page--developing">
         <header class="header">
-            <div class="header__container">
-                <a href="index.html" class="header__logo">
-                    <img class="header__logo__img" src="public/img/dhg-logo-header.svg">
-                </a>
-                <svg class="header__hamburger" x="0px" y="0px"
-                     width="26" height="26"
-                     viewBox="0 0 26 26"
-                     style=" fill:#000000;"><g id="surface1"><path style=" " d="M 0 4 L 0 6 L 26 6 L 26 4 Z M 0 12 L 0 14 L 26 14 L 26 12 Z M 0 20 L 0 22 L 26 22 L 26 20 Z "></path></g></svg>
-                <div class="header__menu menu">
-                    <a class="menu__item menu__item--developing menu__item--active" href="developing.html">DH Developing & Construction</a>
-                    <a class="menu__item menu__item--landscape" href="landscape.html">DH Landscape Invest</a>
-                    <a class="menu__item menu__item--solar" href="solar.html">DH Solar Energy</a>
-                    <a class="menu__item menu__item--finance" href="finance.html">DH Finance</a>
-                    <a class="menu__item menu__item--about" href="about.html">About us</a>
-                    <a class="menu__item" href="contact.html">Contact</a>
+            <main class="main main--compact">
+                <nav class="topnav">
+                    <a href="#" class="topnav__item topnav__item--active">
+                        ÚVOD
+                        <span class="topnav__underline"></span>
+                    </a>
+                    <a href="#" class="topnav__item">
+                        NAŠE INVESTÍCIE
+                        <span class="topnav__underline"></span>
+                    </a>
+                    <a href="#" class="topnav__item">
+                        KONTAKT
+                        <span class="topnav__underline"></span>
+                    </a>
+                    <label for="sidebar" class="topnav__hamburger">
+                        click me
+                    </label>
+                </nav>
+
+            </main>
+        </header>
+        <input id="sidebar" type="checkbox">
+        <aside class="sidebar">
+            <div class="sidebar__scrollarea">
+                <div class="sidebar__container">
+                    <nav class="sidenav">
+                        <a href="#" class="sidenav__item">
+                            <img class="sidenav__logo" src="public/img/dhg-logo-header.svg">
+                        </a>
+                        <a href="#" class="sidenav__item">
+                            <img class="sidenav__logo" src="public/img/dh-developing-logo.svg">
+                        </a>
+                        <a href="#" class="sidenav__item">
+                            <img class="sidenav__logo" src="public/img/dh-solar-logo.svg">
+                        </a>
+                        <a href="#" class="sidenav__item">
+                            <img class="sidenav__logo" src="public/img/dh-landscape-logo.svg">
+                        </a>
+                        <a href="#" class="sidenav__item">
+                            <img class="sidenav__logo" src="public/img/dh-finance-logo.svg">
+                        </a>
+                        <span class="sidenav__divider"></span>
+                        <a href="#" class="sidenav__item">
+                            <span class="sidenav__text">
+                                About us
+                            </span>
+                        </a>
+                        <a href="#" class="sidenav__item">
+                            <span class="sidenav__text">
+                                +421 944 122 532
+                            </span>
+                        </a>
+                        <div class="sidenav__languages">
+                            <a href="#" class="sidenav__languages__item">
+                                SK
+                            </a>
+                            /
+                            <a href="#" class="sidenav__languages__item">
+                                EN
+                            </a>
+                        </div>
+                    </nav>
+
+
                 </div>
             </div>
-        </header>
-        <main class="main main--developing">
+
+        </aside>
+        <main class="main">
             <section class="info">
+                <div class="info__illustration">
+                    <svg class="info__svg svg svg--developing" viewBox="0 0 600 600">
+                    <defs>
+                    <style>
+                        .a {
+                            fill: #f6f8fa;
+                        }
+
+                        .b, .e {
+                            fill: none;
+                        }
+
+                        .b, .d, .f {
+                            stroke: #231f20;
+                        }
+
+                        .b, .d, .e, .f, .i {
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 2.73px;
+                        }
+
+                        .c, .f {
+                            fill: #fff;
+                        }
+
+                        .d {
+                            fill: #feffff;
+                        }
+
+                        .e, .i {
+                            stroke: #000;
+                        }
+
+                        .g {
+                            fill: #c5e2bd;
+                        }
+
+                        .h {
+                            fill: #cbdcf1;
+                        }
+
+                        .i {
+                            fill: #e6f4f9;
+                        }
+                    </style>
+                    </defs>
+                    <circle class="a" cx="298.07" cy="342.04" r="257.96"/>
+                    <g>
+                    <polyline class="b" points="97.79 376.02 97.79 293.95 252.95 293.95 252.95 357.13"/>
+                    <line class="b" x1="252.95" y1="309.13" x2="137.12" y2="309.13"/>
+                    <line class="b" x1="113.9" y1="309.13" x2="97.79" y2="309.13"/>
+                    </g>
+                    <g>
+                    <rect class="c" x="336.25" y="208.17" width="160.42" height="114.58"/>
+                    <polyline class="b" points="496.67 376.02 496.67 208.17 336.25 208.17 336.25 224.58 336.25 376.02"/>
+                    <line class="b" x1="496.67" y1="224.58" x2="336.25" y2="224.58"/>
+                    <line class="b" x1="336.25" y1="241.61" x2="496.67" y2="241.61"/>
+                    <line class="b" x1="496.67" y1="258.03" x2="336.25" y2="258.03"/>
+                    <line class="b" x1="336.25" y1="275.37" x2="496.67" y2="275.37"/>
+                    <line class="b" x1="496.67" y1="290.24" x2="336.25" y2="290.24"/>
+                    <line class="b" x1="336.25" y1="309.13" x2="496.67" y2="309.13"/>
+                    <polyline class="b" points="496.67 322.75 382.09 322.75 336.25 322.75"/>
+                    <g>
+                    <line class="b" x1="382.4" y1="376.02" x2="382.4" y2="322.75"/>
+                    <line class="b" x1="391.69" y1="322.75" x2="391.69" y2="376.02"/>
+                    <line class="b" x1="417.7" y1="322.75" x2="417.7" y2="376.02"/>
+                    <line class="b" x1="443.41" y1="322.75" x2="443.41" y2="376.02"/>
+                    <line class="b" x1="453.93" y1="376.02" x2="453.93" y2="322.75"/>
+                    <line class="b" x1="426.06" y1="345.36" x2="426.06" y2="362.08"/>
+                    <line class="b" x1="408.87" y1="345.36" x2="408.87" y2="362.08"/>
+                    </g>
+                    </g>
+                    <g>
+                    <rect class="c" x="295.45" y="241.61" width="17.88" height="65.42"/>
+                    <line class="b" x1="275.86" y1="241.61" x2="336.25" y2="241.61"/>
+                    <line class="b" x1="295.45" y1="241.61" x2="295.45" y2="307.03"/>
+                    <line class="b" x1="313.34" y1="307.03" x2="313.34" y2="241.61"/>
+                    <line class="b" x1="275.86" y1="307.03" x2="336.25" y2="307.03"/>
+                    </g>
+                    <g>
+                    <polyline class="b" points="275.86 376.02 275.86 120.22 137.12 120.22 137.12 293.64"/>
+                    <line class="b" x1="275.86" y1="319.66" x2="252.95" y2="319.66"/>
+                    <g>
+                    <rect class="d" x="152.3" y="136.32" width="29.11" height="64.11"/>
+                    <rect class="d" x="192.54" y="136.32" width="25.15" height="64.11"/>
+                    <rect class="d" x="230.8" y="136.32" width="25.15" height="64.11"/>
+                    <rect class="d" x="152.3" y="212.81" width="29.11" height="64.11"/>
+                    <rect class="d" x="192.54" y="212.81" width="25.15" height="64.11"/>
+                    <rect class="d" x="230.8" y="212.81" width="25.15" height="64.11"/>
+                    </g>
+                    </g>
+                    <line class="e" x1="391.85" y1="181.03" x2="402.07" y2="181.03"/>
+                    <path class="b" d="M553,376a45.53,45.53,0,0,1,0,91.05H454.55"/>
+                    <line class="b" x1="324.25" y1="467.07" x2="444.95" y2="467.07"/>
+                    <path class="b" d="M522.53,553.74H44.84a43.34,43.34,0,1,1,0-86.67H81.69"/>
+                    <polyline class="f" points="87.57 376.02 104.92 376.02 110.18 376.02 143.01 376.02 147.96 376.02 204.17 376.02"/>
+                    <line class="f" x1="263.17" y1="376.02" x2="464.77" y2="376.02"/>
+                    <line class="f" x1="472.21" y1="376.02" x2="515.56" y2="376.02"/>
+                    <g>
+                    <polyline class="b" points="391.44 553.74 401.77 501.02 404.56 553.74"/>
+                    <polyline class="b" points="462.63 553.74 465.06 501.02 475.86 553.74"/>
+                    <line class="b" x1="394.34" y1="501.02" x2="472.84" y2="501.02"/>
+                    <path class="b" d="M409.56,536.09s2.2,1.91,9.57,1.91,8.94-1.91,8.94-1.91"/>
+                    <line class="b" x1="412.69" y1="501.02" x2="412.69" y2="537.13"/>
+                    <line class="b" x1="424.88" y1="537.13" x2="424.88" y2="501.02"/>
+                    <line class="b" x1="440.68" y1="501.02" x2="440.68" y2="537.13"/>
+                    <line class="b" x1="452.87" y1="537.13" x2="452.87" y2="501.02"/>
+                    <path class="b" d="M437.54,536.09s2.21,1.91,9.58,1.91,8.94-1.91,8.94-1.91"/>
+                    </g>
+                    <g>
+                    <line class="b" x1="292.4" y1="553.04" x2="287.53" y2="541.2"/>
+                    <line class="b" x1="278.35" y1="541.2" x2="273.36" y2="553.04"/>
+                    <path class="b" d="M282.92,522.17V454.22a9,9,0,0,0-7.3-3.55c-4.93,0-6.65,4.18-6.65,8.77"/>
+                    <rect class="f" x="278.35" y="522.17" width="9.17" height="19.03"/>
+                    <circle class="b" cx="268.97" cy="466.09" r="5.72"/>
+                    <circle class="b" cx="296.81" cy="466.09" r="5.72"/>
+                    <line class="b" x1="264.65" y1="459.44" x2="273.76" y2="459.44"/>
+                    <line class="b" x1="291.53" y1="459.44" x2="301.4" y2="459.44"/>
+                    <path class="b" d="M282.92,454.22a9,9,0,0,1,7.3-3.55c4.93,0,6.64,4.18,6.64,8.77"/>
+                    </g>
+                    <g>
+                    <line class="b" x1="315.35" y1="523.43" x2="315.35" y2="541.78"/>
+                    <line class="b" x1="346.59" y1="523.43" x2="346.59" y2="541.78"/>
+                    <line class="b" x1="354.83" y1="528.42" x2="306.29" y2="528.42"/>
+                    <line class="b" x1="354.83" y1="535.1" x2="306.29" y2="535.1"/>
+                    <line class="b" x1="354.83" y1="541.78" x2="306.29" y2="541.78"/>
+                    <line class="b" x1="310.24" y1="547.12" x2="351.58" y2="547.12"/>
+                    <line class="b" x1="351.58" y1="541.78" x2="351.58" y2="553.04"/>
+                    <line class="b" x1="310.24" y1="541.78" x2="310.24" y2="553.04"/>
+                    </g>
+                    <g>
+                    <line class="b" x1="220.83" y1="523.43" x2="220.83" y2="541.78"/>
+                    <line class="b" x1="252.07" y1="523.43" x2="252.07" y2="541.78"/>
+                    <line class="b" x1="260.32" y1="528.42" x2="211.77" y2="528.42"/>
+                    <line class="b" x1="260.32" y1="535.1" x2="211.77" y2="535.1"/>
+                    <line class="b" x1="260.32" y1="541.78" x2="211.77" y2="541.78"/>
+                    <line class="b" x1="215.72" y1="547.12" x2="257.07" y2="547.12"/>
+                    <line class="b" x1="257.07" y1="541.78" x2="257.07" y2="553.04"/>
+                    <line class="b" x1="215.72" y1="541.78" x2="215.72" y2="553.04"/>
+                    </g>
+                    <g>
+                    <path class="g" d="M208.89,469.06a18.34,18.34,0,0,0-4.29-11.8,18.38,18.38,0,0,0-16.13-25.44A18.34,18.34,0,0,0,159.75,422a18.38,18.38,0,0,0-33.53,6,18.31,18.31,0,0,0-21.56,18.1c0,.54,0,1.07.09,1.6a18.37,18.37,0,0,0-1,30.85c0,.07,0,.14,0,.22a18.37,18.37,0,0,0,32,12.29,18.31,18.31,0,0,0,10.94,3.69,18.31,18.31,0,0,0,20.83,5.19,18.36,18.36,0,0,0,28.18-13.25A18.38,18.38,0,0,0,208.89,469.06Z"/>
+                    <path class="b" d="M131.19,495.79s8,5.74,10.21,6.38c0,0,1.28,15.32.9,18.25s-1.68,18.29-10.31,21.52"/>
+                    <path class="b" d="M140.25,546.46S135,547.87,134,553"/>
+                    <path class="b" d="M157.78,546.78s-6.68-5.92-6-17.29"/>
+                    <path class="b" d="M167.06,500.51s20.94,12.13,29.36-13.15c0,0,20.94-10.3,8.55-30.42,0,0,5-24-16.08-25.87,0,0-8.55-18.77-27.83-10,0,0-22.21-20.85-35.36,6,0,0-20.68-.9-21.45,20,0,0-17.87,14.17-1.53,31.28,0,0,3.3,32.55,35.16,13.4,0,0,4.8,3.7,9.27,2.55,0,0,6.51,11.49,19.91,6.13-6.38,4-8.42,8.17-9.19,17.74s3.57,25.15,8.42,28.21,4.73,7.28,4.73,7.28"/>
+                    <path class="b" d="M111.28,448.68a16.74,16.74,0,0,1,14.55-13.91"/>
+                    <path class="b" d="M199.23,461.06s4.85,12.9-6.13,19.66"/>
+                    </g>
+                    <g>
+                    <circle class="b" cx="121.19" cy="544.03" r="9.64"/>
+                    <circle class="b" cx="89.72" cy="544.03" r="9.64"/>
+                    <circle class="f" cx="121.27" cy="543.34" r="2.67"/>
+                    <circle class="f" cx="89.72" cy="543.34" r="2.67"/>
+                    <path class="b" d="M92.39,526.51s-4.24-2.87,0-4.34H100l-10.31,18.5"/>
+                    <polyline class="b" points="94.87 531.42 114.99 531.42 121.27 540.67"/>
+                    <circle class="b" cx="105.97" cy="543.01" r="2.94"/>
+                    <line class="b" x1="118.13" y1="522.17" x2="107.75" y2="540.67"/>
+                    <line class="b" x1="97.22" y1="531.42" x2="103.58" y2="541.31"/>
+                    <line class="b" x1="122.14" y1="522.17" x2="111.55" y2="522.17"/>
+                    <line class="b" x1="119.11" y1="544.91" x2="108.07" y2="544.91"/>
+                    </g>
+                    <g>
+                    <polygon class="h" points="385.18 435.79 416.16 425.11 436.95 406.21 470.56 406.65 491.92 414.11 506.74 426.19 506.74 450.34 498.48 450.36 490.79 446.47 483.09 450.4 420.6 450.55 412.13 446.47 403.24 450.59 385.47 450.63 385.18 435.79"/>
+                    <path class="b" d="M396.33,456.23H385.18V435.79L417.08,424s12.08-14.4,20.75-17.81h32.83s25.86,5.58,36.08,20v30h-2.95"/>
+                    <polyline class="b" points="506.74 428.51 500.39 431.22 503.56 440.74 506.74 440.74"/>
+                    <circle class="b" cx="412.13" cy="456.07" r="9.6"/>
+                    <circle class="b" cx="490.79" cy="456.07" r="9.6"/>
+                    <line class="b" x1="385.18" y1="450.34" x2="403.92" y2="450.34"/>
+                    <line class="b" x1="419.83" y1="450.34" x2="483.09" y2="450.34"/>
+                    <line class="b" x1="498.48" y1="450.34" x2="506.74" y2="450.34"/>
+                    <line class="b" x1="425.6" y1="456.23" x2="474.68" y2="456.23"/>
+                    <line class="b" x1="433.65" y1="434.63" x2="443.41" y2="434.63"/>
+                    <line class="b" x1="449.44" y1="434.63" x2="459.82" y2="434.63"/>
+                    <polyline class="b" points="385.18 440.74 395.87 440.74 398.35 437.03 398.35 431.22"/>
+                    <path class="f" d="M457.34,414.11l-2.71,12.54h36.16S484.75,414.11,457.34,414.11Z"/>
+                    <path class="f" d="M446,426.65l2.55-12.54h-8.67s-11.3,7-11.3,12.54Z"/>
+                    </g>
+                    <g>
+                    <line class="b" x1="295.45" y1="376.02" x2="295.45" y2="356.97"/>
+                    <polyline class="b" points="292.9 345.36 292.9 334.99 297.54 334.99"/>
+                    <rect class="b" x="284.69" y="342.26" width="23.69" height="14.71"/>
+                    </g>
+                    <g>
+                    <circle class="g" cx="125.47" cy="323.88" r="18.39"/>
+                    <line class="b" x1="126.44" y1="376.02" x2="126.44" y2="314.39"/>
+                    <polyline class="b" points="114.83 319.66 126.44 329.88 137.12 321.05"/>
+                    <circle class="b" cx="125" cy="323.91" r="18.35"/>
+                    </g>
+                    <g>
+                    <circle class="g" cx="164.38" cy="333.13" r="15.02"/>
+                    <line class="b" x1="163.14" y1="324.77" x2="163.14" y2="376.02"/>
+                    <line class="b" x1="171.65" y1="331.58" x2="163.14" y2="340.17"/>
+                    <line class="b" x1="154.62" y1="331.58" x2="163.14" y2="339.48"/>
+                    <circle class="b" cx="164.38" cy="333.13" r="15.02"/>
+                    </g>
+                    <g>
+                    <circle class="g" cx="523.46" cy="332.82" r="15.02"/>
+                    <polyline class="b" points="522.53 324.61 522.53 376.02 552.98 376.02"/>
+                    <polyline class="b" points="514.17 331.89 522.53 339.94 531.67 330.96"/>
+                    <circle class="b" cx="523.46" cy="332.82" r="15.02"/>
+                    </g>
+                    <g>
+                    <line class="f" x1="220" y1="376.02" x2="230.34" y2="376.02"/>
+                    <line class="f" x1="235.6" y1="376.02" x2="240.65" y2="376.02"/>
+                    <circle class="b" cx="212.09" cy="368.14" r="11.17"/>
+                    <circle class="b" cx="248.56" cy="368.14" r="11.17"/>
+                    <circle class="f" cx="211.99" cy="367.35" r="3.1"/>
+                    <circle class="f" cx="248.56" cy="367.35" r="3.1"/>
+                    <path class="b" d="M245.47,347.84s4.91-3.33,0-5h-8.86l11.95,21.45"/>
+                    <polyline class="b" points="242.59 353.53 219.27 353.53 211.99 364.25"/>
+                    <circle class="b" cx="229.72" cy="366.96" r="3.41"/>
+                    <line class="b" x1="215.63" y1="342.8" x2="227.66" y2="364.25"/>
+                    <line class="b" x1="239.86" y1="353.53" x2="232.5" y2="364.99"/>
+                    <line class="b" x1="210.98" y1="342.8" x2="223.26" y2="342.8"/>
+                    <line class="b" x1="214.49" y1="369.16" x2="227.29" y2="369.16"/>
+                    </g>
+                    <line class="e" x1="329.61" y1="139.92" x2="381.63" y2="139.92"/>
+                    <line class="e" x1="339.13" y1="150.37" x2="391.85" y2="150.37"/>
+                    <line class="e" x1="183.37" y1="87.98" x2="235.4" y2="87.98"/>
+                    <path class="i" d="M463.15,61.62s-6.27-9.76-17-9.76-20.43,9.52-20.43,20.44c0,0-.86,18,14.16,20.9h73.17s5.57-.69,5.57-5.8c0,0,.41-7.12-7.11-7.12,0,0-3.69-.08-5.14,1.08,0,0-.81-12.07-10.1-12.07a13.71,13.71,0,0,0-9.12,3.24S481.81,52.4,463.15,61.62Z"/>
+                    <path class="i" d="M69.71,173.76s5.1-7.92,13.78-7.92,16.6,7.73,16.6,16.6c0,0,.69,14.65-11.51,17H29.15s-4.53-.57-4.53-4.72c0,0-.33-5.78,5.78-5.78,0,0,3-.07,4.17.88,0,0,.66-9.81,8.21-9.81a11.13,11.13,0,0,1,7.41,2.64S54.56,166.28,69.71,173.76Z"/>
+                    <path class="e" d="M463,142c4.19,0,4.19,4.7,8.39,4.7s4.19-4.7,8.39-4.7,4.2,4.7,8.39,4.7,4.2-4.7,8.4-4.7,4.2,4.7,8.39,4.7,4.2-4.7,8.4-4.7,4.2,4.7,8.4,4.7"/>
+                    <path class="e" d="M99.65,136.23c-4.19,0-4.19-4.7-8.39-4.7s-4.2,4.7-8.39,4.7-4.2-4.7-8.39-4.7-4.2,4.7-8.4,4.7-4.2-4.7-8.39-4.7-4.2,4.7-8.4,4.7-4.2-4.7-8.4-4.7"/>
+                    <circle class="e" cx="382.4" cy="115.92" r="5.75"/>
+                    <circle class="e" cx="105.85" cy="219.72" r="5.75"/>
+                    </svg>
+                </div>
                 <div class="info__description">
                     <img class="info__logo" src="public/img/dh-developing-logo.svg">
                     <div class="info__paragraph paragraph">
@@ -49,42 +332,13 @@ and open the template in the editor.
                     <div class="info__paragraph paragraph">
                         Do portfólia spoločnosti však nepatrí len spomínaný developing logistických parkov, či rezidencie, ale aj administratívne, priemyselné a poľnohospodárske projekty. V neposlednom rade našu ďalšiu činnosť tvorí stavebná činnosť, predaj a prenájom nehnuteľností.
                     </div>
+
                 </div>
-                <div class="info__contacts contacts">
-                    <h2 class="contacts__heading heading heading--2">
-                        Kontakt
-                    </h2>
-                    <div class="contacts__block">
-                        <div class="contacts__line contacts__line--dark">
-                            DH Groupm, a.s.
-                        </div>
-                        <div class="contacts__line">
-                            Králova pri Senci 399
-                        </div>
-                    </div>
-                    <table class="table table--color table--info">
-                        <tr class="table__row">
-                            <td class="table__cell">IČO:</td><td class="table__cell">35 934 336</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__cell">DIČ:</td><td class="table__cell">2020202020</td>
-                        </tr>
-                        <tr class="table__row table__row--space">
-                            <td class="table__cell">IČ DPH:</td><td class="table__cell">SK2020202020</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__cell">mobil:</td><td class="table__cell">+421 904 588 758</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__cell">e-mail:</td><td class="table__cell">dhsolar@dhg.sk</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__cell">web:</td><td class="table__cell">www.dhg.sk</td>
-                        </tr>
-                    </table>
-                </div>
+                <script>
+                    new Accordion('.info__description');
+                </script>
             </section> 
-            <section class="invests">
+            <section class="invests invests--preparing">
                 <h2 class="invests__heading heading heading--2">
                     <span class="heading__text">
                         Naše invesície  
@@ -185,9 +439,45 @@ and open the template in the editor.
         </main>
         <footer class="footer">
             <img class="footer__img" src="public/img/dhg-logo-monotone.svg">
-            <span class="footer__text">
-                DHGroup2019
-            </span>
+            <div class="contacts">
+                <h2 class="contacts__heading heading heading--2">
+                    Kontakt
+                </h2>
+                <div class="contacts__col">
+                    <div class="contacts__line contacts__line--dark">
+                        DH Groupm, a.s.
+                    </div>
+                    <div class="contacts__line">
+                        Králova pri Senci 399
+                    </div>
+                </div>
+                <div class="contacts__col">
+                    <table class="table table--color table--info">
+                        <tr class="table__row">
+                            <td class="table__cell">IČO:</td><td class="table__cell">35 934 336</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">DIČ:</td><td class="table__cell">2020202020</td>
+                        </tr>
+                        <tr class="table__row table__row--space">
+                            <td class="table__cell">IČ DPH:</td><td class="table__cell">SK2020202020</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contacts__col">
+                    <table class="table table--color table--info">
+                        <tr class="table__row">
+                            <td class="table__cell">mobil:</td><td class="table__cell">+421 904 588 758</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">e-mail:</td><td class="table__cell">dhsolar@dhg.sk</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">web:</td><td class="table__cell">www.dhg.sk</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
