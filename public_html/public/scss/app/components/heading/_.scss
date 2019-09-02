@@ -37,7 +37,15 @@
 }
 
 .heading__text{
+    vertical-align: middle;
     margin-right: 0.5em;
+    &--warning{
+        font-size: 0.5em;
+        padding: 0.2em 0.5em;
+        color: $material-color-red-800;
+        border: rem(2) solid $material-color-red-800;
+        @include border-radius(rem(20));
+    }
 }
 
 @for $i from 1 through 6{

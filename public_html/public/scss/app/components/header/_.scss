@@ -15,15 +15,28 @@
     @include media($sidebar-breakpoint){
         background-color: transparent;
         @include linear-interpolation-chain(padding-left, $sidebar-widths); 
+        @at-root .page--homepage &{
+            padding-left: 0;
+        }
     }
+
+
 }
 
 .header__logo{
+
     width: rem(150);
     align-self: center;
+    @at-root .page--homepage  &{
+        width: rem(300);
+    }
     @include media($sidebar-breakpoint){
         display: none;
+        @at-root .page--homepage  &{
+            display: block;
+        }
     }
+
 }
 
 .header__hamburger{
@@ -36,4 +49,19 @@
 
 .header__hamburger__svg{
     width: rem(30);
+}
+
+
+.header__languages{
+    margin-left: auto;
+    align-self: center;
+    font-size: rem(25);
+    color: $color-primary-light;
+}
+.header__languages__item{
+    color: $color-primary-light;
+    text-decoration: none;
+    &:hover,&--active{
+        color: $color-primary;
+    }
 }

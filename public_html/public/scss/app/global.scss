@@ -25,5 +25,7 @@ body{
     @include media($sidebar-breakpoint){
         @include linear-interpolation-chain(padding-left, $sidebar-widths); 
     }
-
+    @at-root  &.page--homepage {
+        padding-left: 0;
+    }
 }

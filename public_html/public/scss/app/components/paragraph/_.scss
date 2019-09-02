@@ -20,19 +20,19 @@
         border-bottom: rem(1) currentColor solid;
         padding-bottom: rem(1);
 
-        @at-root .main--about &{
+        @at-root .page--about &{
             color: $color-about
         }
-        @at-root .main--developing &{
+        @at-root .page--developing &{
             color: $color-developing
         }
-        @at-root .main--finance &{
+        @at-root .page--finance &{
             color: $color-finance;
         }
-        @at-root .main--landscape &{
+        @at-root .page--landscape &{
             color: $color-landscape
         }
-        @at-root .main--solar &{
+        @at-root .page--solar &{
             color: $color-solar;
         }
     }

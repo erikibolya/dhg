@@ -2,6 +2,7 @@
 
 .topnav{
     display: flex;
+    font-family: $font-sans-serif-heading;
     @include linear-interpolation-chain(font-size,(xl: 15, s:13));
     margin-top: auto;
     margin-bottom: auto;
@@ -10,6 +11,7 @@
     bottom: 0;
     left: 0;
     padding: 1em 2em;
+    
     @include border-radius-top-right(rem(30));
     @include border-radius-bottom-right(rem(30));
     @include linear-interpolation-chain(padding-left,$layout-container-inner-paddings);

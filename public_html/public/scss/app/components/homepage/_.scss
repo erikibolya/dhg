@@ -1,33 +1,74 @@
 @import "variables.scss";
 
 .homepage{
-    @include container-custom($homepage-container-width, (xl:0,s:0));
-    align-items: center;
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    align-items: stretch;
+    overflow: hidden;
+    @include media($homepage-breakpoint){
+        display: flex;
+    }
+
 }
 
 .homepage__item{
+    z-index: 10;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
     align-items: flex-start;
     width: 25%;
+    min-height: 100%;
     @include linear-interpolation-chain(padding-left,$homepage-item-paddings-horizontal);
     @include linear-interpolation-chain(padding-right,$homepage-item-paddings-horizontal);
+    /*padding-bottom: rem(70);*/
     max-height: rem(1080);
+
+    &:hover{
+        &.division-developing ~ .homepage__background{
+            transform: translateX(0);
+            display: block;
+        }
+        &.division-solar ~ .homepage__background{
+            transform: translateX(100%);
+            display: block;
+        }
+        &.division-landscape ~ .homepage__background{
+            transform: translateX(200%);
+            display: block;
+        }
+        &.division-finance ~ .homepage__background{
+            transform: translateX(300%);
+            display: block;
+        }
+
+
+    }
 }
 
 .homepage__illustration{
-    /*margin-top: auto;*/
     width: 100%;
     display: block;
+    flex-shrink: 0;
     margin-bottom: rem(70);
+    filter: grayscale(100%);
+    opacity: .1;
+    transition: 0.3s ease-in-out 0.1s;
+    @at-root .homepage__item:hover &{
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: translateY(rem(5));
+    }
 
 }
 
 .homepage__logo{
-    /*margin-top: auto;*/
-    width: 70%;
     display: block;
-    margin-bottom: rem(50);
+    width: 90%;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
 }
 
 .homepage__paragraph{
@@ -49,7 +90,13 @@
     @include border-radius(50%); 
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
     background-color: $color-secondary;
-    @include linear-interpolation-chain(margin-bottom,(xl: 60,l: 50),true,"vh");
+    margin-bottom: rem(20);
+    transition: ease-in-out 0.15s;
+
+    @at-root .homepage__item:hover &{
+        transform: translateY(rem(-10));
+        box-shadow: 0 2.5rem 2.5rem 0rem rgba(60, 55, 80, 0.25);
+    }
 
     @at-root .division-developing &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-developing,0.55);
@@ -73,4 +120,15 @@
     right: 0;
     margin: auto;
     width: 20%;
+}
+
+.homepage__background{
+    top: 0;
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 2rem 0 rgba(60, 55, 80, 0.1);
+    transition: 0.3s ease-in-out 0.1s;
+    transition: transform 0.6s cubic-bezier(0.1, 0.9, 0.3, 1.1);
 }

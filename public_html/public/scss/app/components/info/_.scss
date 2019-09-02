@@ -81,7 +81,10 @@
         overflow: visible;
         .info__accordion__button{
             &:after{
-                content: "ZOBRAZI\0164  MENEJ"
+                content: "ZOBRAZI\0164  MENEJ";
+                @at-root :lang(en) &{
+                    content: "SHOW LESS";
+                }
             }
         }
     }
@@ -106,6 +109,9 @@
     box-shadow: 0.3125rem 0 1.25rem 0 rgba(0, 0, 0, 0.05);
 
     &:after{
-        content: "ZOBRAZI\0164  VIAC"
+        content: "ZOBRAZI\0164  VIAC";
+        @at-root :lang(en) &{
+            content: "SHOW MORE";
+        }
     }
 }

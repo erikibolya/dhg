@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .main{
+    z-index: z-index(main);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,11 +19,18 @@
         flex-direction: row;
         padding-top: 0;
         margin-bottom: 0;
+        @at-root .page--homepage &{
+            max-width: none;
+        }
     }
 
     &--homepage{
         display: flex;
         margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+        padding-top: 0;
     }
 
     @include media($sidebar-breakpoint){

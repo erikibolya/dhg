@@ -21,6 +21,9 @@
     transform: translateX(-100%);
     width: 100%;
     overflow: hidden;
+    @at-root .page--homepage & {
+        display: none;
+    }
 
     @include media($sidebar-breakpoint){
         transform: translateX(0);
