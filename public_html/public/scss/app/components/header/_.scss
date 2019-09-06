@@ -24,11 +24,10 @@
 }
 
 .header__logo{
-
     width: rem(150);
     align-self: center;
     @at-root .page--homepage  &{
-        width: rem(300);
+        width: rem(250);
     }
     @include media($sidebar-breakpoint){
         display: none;
@@ -55,11 +54,11 @@
 .header__languages{
     margin-left: auto;
     align-self: center;
-    font-size: rem(25);
-    color: $color-primary-light;
+    font-size: rem(20);
+    color: $color-primary-lighter;
 }
 .header__languages__item{
-    color: $color-primary-light;
+    color: $color-primary-lighter;
     text-decoration: none;
     &:hover,&--active{
         color: $color-primary;

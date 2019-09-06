@@ -19,9 +19,19 @@
         flex-direction: row;
         padding-top: 0;
         margin-bottom: 0;
-        @at-root .page--homepage &{
-            max-width: none;
+        box-shadow: 0 rem(3) rem(6) rgba(0,0,0,0.04);
+        @include media($sidebar-breakpoint){
+            box-shadow: none;
         }
+    }
+    &--homepagetop{
+        flex-direction: row;
+        padding-top: 0;
+        margin-bottom: 0;
+        max-width: none;
+        @include linear-interpolation-chain(padding-left, $homepage-item-paddings-horizontal);
+        @include linear-interpolation-chain(padding-right, $homepage-item-paddings-horizontal);
+
     }
 
     &--homepage{

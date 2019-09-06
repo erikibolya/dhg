@@ -14,7 +14,6 @@
     display: none;
     width: 100%;
     margin-bottom: 1.7em;
-    opacity: 0.1;
     @include media($invests-breakpoint){
         display: block;
     }

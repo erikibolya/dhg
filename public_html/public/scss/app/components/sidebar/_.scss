@@ -41,6 +41,7 @@
 
 .sidebar__container{
     display: flex;
+    height: 100%;
     flex-direction: column;
     padding: rem(50) rem(70);
     @include linear-interpolation-chain(padding-top,(

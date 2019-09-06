@@ -6,7 +6,7 @@
     flex-direction: column;
     &--preparing{
         .invests__row{
-            opacity: 0.2;
+            /*opacity: 0.03;*/
         }
     }
 }
@@ -31,6 +31,9 @@
 
 .invests__contacts{
     margin-right: auto;
+    @at-root .invests--preparing &{
+        /*background-color: black;*/
+    }
     @include media($invests-breakpoint){
         flex-shrink: 0;
         box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);

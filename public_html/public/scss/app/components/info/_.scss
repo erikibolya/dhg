@@ -35,6 +35,21 @@
     position: relative;
 }
 
+.info__accordion__wrapper{
+    position: relative;
+}
+
+.info__gradient{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0) 100%);
+
+}
+
 .info__description{
     margin-bottom: rem(50);
     @include media($info-breakpoint){
@@ -79,6 +94,11 @@
 
     &.is-active{
         overflow: visible;
+
+        .info__gradient{
+            background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+        }
+
         .info__accordion__button{
             &:after{
                 content: "ZOBRAZI\0164  MENEJ";
@@ -93,22 +113,32 @@
 .info__accordion__hidden{
     height: 0;
     overflow: hidden;
+    > .info__paragraph{
+        &:last-child{
+            margin-bottom: rem(120);
+        }
+    }
 }
 
 .info__accordion__button{
-    bottom: rem(5);
+    z-index: 60;
+    font-size: rem(13);
+    bottom: rem(44);
+    color: $color-primary;
     background-color: $color-secondary;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    padding: 0.3em 1em;
-    @include border-radius(rem(20));
+    padding: rem(15) rem(26) rem(13) rem(26);
+    @include border-radius(rem(60));
     cursor: pointer;
     transition-property: transform;
     transition-duration: 500ms;
     box-shadow: 0.3125rem 0 1.25rem 0 rgba(0, 0, 0, 0.05);
 
     &:after{
+        display: block;
+        line-height: 1;
         content: "ZOBRAZI\0164  VIAC";
         @at-root :lang(en) &{
             content: "SHOW MORE";

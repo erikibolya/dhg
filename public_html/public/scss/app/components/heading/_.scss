@@ -37,14 +37,18 @@
 }
 
 .heading__text{
-    vertical-align: middle;
+    vertical-align: baseline;
     margin-right: 0.5em;
     &--warning{
-        font-size: 0.5em;
-        padding: 0.2em 0.5em;
+        display: inline-block;
+        position: relative;
+        bottom: rem(4);
+        margin-right: rem(30);
+        font-size: rem(18);
+        padding: rem(11) rem(43) rem(11) rem(43);
         color: $material-color-red-800;
-        border: rem(2) solid $material-color-red-800;
-        @include border-radius(rem(20));
+        border: rem(3) solid $material-color-red-800;
+        @include border-radius(rem(60));
     }
 }
 

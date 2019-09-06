@@ -2,8 +2,12 @@
 
 .sidenav{
     width: 100%;
+    height: 100%;
+    min-height: rem(600);
+    max-height: rem(900);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     @include linear-interpolation-chain(font-size,(
     xl: 22,
@@ -17,10 +21,14 @@
     display: flex;
     color: $color-primary;
     text-decoration: none;
-    margin-bottom: 3em;
+    /*margin-bottom: 3em;*/
     &--main{
-        margin-bottom: 6em;
+        margin-bottom: 2em;
     }
+    &--margin{
+        margin-bottom: rem(25);
+    }
+
     &:not(.sidenav__item--main):hover{
         .sidenav__logo{
             transform: translateX(rem(5));
@@ -39,15 +47,15 @@
 .sidenav__divider{
     width: 50%;
     height: rem(1);
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
     background-color: $color-primary-light;
 }
 
 .sidenav__languages{
-    color: $color-primary-light;
+    color: $color-primary-lighter;
 }
 .sidenav__languages__item{
-    color: $color-primary-light;
+    color: $color-primary-lighter;
     text-decoration: none;
     &:hover,&--active{
         color: $color-primary;

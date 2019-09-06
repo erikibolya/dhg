@@ -11,7 +11,7 @@
 
 
 $font-sans-serif: "ProximaNova";
-$font-sans-serif-letter-spacing: -0.02em; //pryč
+$font-sans-serif-letter-spacing: 0em;
 
 $font-sans-serif-heading:"SofiaPro";
 
@@ -28,8 +28,11 @@ menu: -1,
 
 $color-primary: #3c3750;
 $color-primary-light: #817d8e;
+$color-primary-lighter: rgba(0, 0, 0, .2);
+
 $color-secondary: #ffffff;
 $color-secondary-dark: #fcfcfc;
+
 $color-terciary: #00a6e7;
 
 $color-developing: #0d56a5;
