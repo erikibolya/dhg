@@ -39,6 +39,7 @@
     display: inline-block;
     position: relative;
     bottom: 0.25rem;
+    margin-bottom: 0.625rem;
     margin-right: 1.875rem;
     font-size: 1.125rem;
     padding: 0.6875rem 2.6875rem 0.6875rem 2.6875rem;
@@ -668,7 +669,8 @@
   cursor: pointer;
   transition-property: transform;
   transition-duration: 500ms;
-  box-shadow: 0.3125rem 0 1.25rem 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 0.3125rem 0 1.25rem 0 rgba(0, 0, 0, 0.05);
+  white-space: nowrap; }
   .info__accordion__button:after {
     display: block;
     line-height: 1;
@@ -755,7 +757,8 @@
   padding: 3.75rem 3.4375rem;
   color: #817d8e;
   font-size: calc(0.10417vw + 0.91667rem);
-  box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem; }
   @media (min-width: 80em) {
     .contacts {
       font-size: 1rem; } }
@@ -777,7 +780,12 @@
       color: #e0e0e0; } }
 
 .contacts__col {
-  width: 33%; }
+  width: 100%;
+  margin-bottom: 0.7em; }
+  @media (min-width: 81.25em) {
+    .contacts__col {
+      margin-bottom: 0;
+      width: 33%; } }
 
 .contacts__line {
   margin-bottom: 0.8em; }
@@ -820,19 +828,16 @@
   .table__cell:first-child {
     width: 4.6875rem;
     color: #3c3750; }
-    .main--developing .table--color .table__cell:first-child {
+    .page--developing .table--color .table__cell:first-child {
       color: #0d56a5; }
-    .main--finance .table--color .table__cell:first-child {
+    .page--finance .table--color .table__cell:first-child {
       color: #fdb813; }
-    .main--landscape .table--color .table__cell:first-child {
+    .page--landscape .table--color .table__cell:first-child {
       color: #8dc63f; }
-    .main--solar .table--color .table__cell:first-child {
+    .page--solar .table--color .table__cell:first-child {
       color: #ed1c24; }
-    .main--about .table--color .table__cell:first-child {
+    .page--about .table--color .table__cell:first-child {
       color: #00a6e7; }
-    @media (min-width: 56.25em) {
-      .table--info .table__cell:first-child {
-        width: auto; } }
   .table__row--space .table__cell {
     padding-bottom: 2em; }
 
@@ -962,6 +967,7 @@
     stroke: #ed1c24; }
 
 .placeholder-text {
+  user-select: none;
   color: transparent !important;
   border-bottom: 0.75rem solid #f8f8f8 !important; }
   .placeholder-text--bold {
@@ -979,7 +985,8 @@
   padding-top: 2em;
   padding-bottom: 2.5em;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap-reverse; }
   @media (min-width: 80em) {
     .footer {
       padding-left: 2.5rem; } }

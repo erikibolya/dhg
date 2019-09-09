@@ -135,6 +135,7 @@
     transition-property: transform;
     transition-duration: 500ms;
     box-shadow: 0.3125rem 0 1.25rem 0 rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
 
     &:after{
         display: block;
