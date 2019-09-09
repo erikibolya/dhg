@@ -76,6 +76,7 @@
     box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
     background-color: $color-secondary;
     transform: translateY(50%);
+    transition: ease-in 0.15s;
 
     @at-root .division-developing &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-developing,0.55);
@@ -88,6 +89,26 @@
     }
     @at-root .division-solar &{
         box-shadow: 0 rem(16) rem(40) rem(-10) transparentize($color-solar,0.55);
+    }
+
+
+    @at-root .division-developing &:hover{
+        transform: translateY(40%);
+        box-shadow: 0 2.5rem 2.5rem 0rem transparentize($color-developing,0.75);
+    }
+
+    @at-root .division-finance &:hover{
+        transform: translateY(40%);
+        box-shadow: 0 2.5rem 2.5rem 0rem transparentize($color-finance,0.75);
+    }
+
+    @at-root .division-landscape &:hover{
+        transform: translateY(40%);
+        box-shadow: 0 2.5rem 2.5rem 0rem transparentize($color-landscape,0.75);
+    }
+    @at-root .division-solar &:hover{
+        transform: translateY(40%);
+        box-shadow: 0 2.5rem 2.5rem 0rem transparentize($color-solar,0.75);
     }
 
 }

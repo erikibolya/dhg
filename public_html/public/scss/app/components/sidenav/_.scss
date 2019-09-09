@@ -46,6 +46,13 @@
     }
 }
 
+.sidenav__group{
+
+    .sidenav__item:first-child{
+        margin-bottom: rem(25);
+    }
+}
+
 .sidenav__close{
     margin-left: auto;
     margin-bottom: rem(20);

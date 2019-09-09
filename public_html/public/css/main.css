@@ -326,6 +326,9 @@
   .sidenav__item:not(.sidenav__item--main):hover .sidenav__text {
     transform: translateX(0.3125rem); }
 
+.sidenav__group .sidenav__item:first-child {
+  margin-bottom: 1.5625rem; }
+
 .sidenav__close {
   margin-left: auto;
   margin-bottom: 1.25rem; }
@@ -976,7 +979,8 @@
   border-bottom-right-radius: 50%;
   box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
-  transform: translateY(50%); }
+  transform: translateY(50%);
+  transition: ease-in 0.15s; }
   .division-developing .divisions__card__button {
     box-shadow: 0 1rem 2.5rem -0.625rem rgba(13, 86, 165, 0.45); }
   .division-finance .divisions__card__button {
@@ -985,6 +989,18 @@
     box-shadow: 0 1rem 2.5rem -0.625rem rgba(141, 198, 63, 0.65); }
   .division-solar .divisions__card__button {
     box-shadow: 0 1rem 2.5rem -0.625rem rgba(237, 28, 36, 0.45); }
+  .division-developing .divisions__card__button:hover {
+    transform: translateY(40%);
+    box-shadow: 0 2.5rem 2.5rem 0rem rgba(13, 86, 165, 0.25); }
+  .division-finance .divisions__card__button:hover {
+    transform: translateY(40%);
+    box-shadow: 0 2.5rem 2.5rem 0rem rgba(253, 184, 19, 0.25); }
+  .division-landscape .divisions__card__button:hover {
+    transform: translateY(40%);
+    box-shadow: 0 2.5rem 2.5rem 0rem rgba(141, 198, 63, 0.25); }
+  .division-solar .divisions__card__button:hover {
+    transform: translateY(40%);
+    box-shadow: 0 2.5rem 2.5rem 0rem rgba(237, 28, 36, 0.25); }
 
 .divisions__card__svg {
   position: absolute;
