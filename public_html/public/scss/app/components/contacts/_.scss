@@ -4,17 +4,22 @@
 .contacts{
     display: flex;
     flex-wrap: wrap;
-    padding: rem(60) rem(55);
     color: $contacts-color;
     @include fluid-font(xs);
-    box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+
     margin-bottom: rem(20);
+    width: 100%;
+    @include media($sidebar-breakpoint){
+        box-shadow: 0 rem(5) rem(20) 0 rgba(0, 0, 0, 0.05);
+        padding: rem(60) rem(55);
+        width: auto;
+    }
 }
 
 .contacts__logo{
     display: none;
     width: 100%;
-    margin-bottom: 1.7em;
+    margin-bottom: 1.25em;
     @include media($invests-breakpoint){
         display: block;
     }
@@ -23,10 +28,7 @@
 .contacts__heading{
     width: 100%;
     margin-bottom: 1.7em;
-    @include media($info-breakpoint){
-        margin-bottom: 1.25em;
-        color: $contacts-heading-color;
-    }
+    color: $contacts-heading-color;
 }
 
 .contacts__col{

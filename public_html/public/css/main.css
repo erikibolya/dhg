@@ -754,30 +754,31 @@
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  padding: 3.75rem 3.4375rem;
   color: #817d8e;
   font-size: calc(0.10417vw + 0.91667rem);
-  box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+  width: 100%; }
   @media (min-width: 80em) {
     .contacts {
       font-size: 1rem; } }
+  @media (min-width: 62.5em) {
+    .contacts {
+      box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
+      padding: 3.75rem 3.4375rem;
+      width: auto; } }
 
 .contacts__logo {
   display: none;
   width: 100%;
-  margin-bottom: 1.7em; }
+  margin-bottom: 1.25em; }
   @media (min-width: 75em) {
     .contacts__logo {
       display: block; } }
 
 .contacts__heading {
   width: 100%;
-  margin-bottom: 1.7em; }
-  @media (min-width: 56.25em) {
-    .contacts__heading {
-      margin-bottom: 1.25em;
-      color: #e0e0e0; } }
+  margin-bottom: 1.7em;
+  color: #3c3750; }
 
 .contacts__col {
   width: 100%;
