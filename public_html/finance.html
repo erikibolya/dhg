@@ -50,6 +50,14 @@ and open the template in the editor.
             <div class="sidebar__scrollarea">
                 <div class="sidebar__container">
                     <nav class="sidenav">
+                        <label for="sidebar" class="sidenav__close">
+                            <svg class="sidenav__close__svg" viewBox="0 0 23.465 23.465">
+                            <g id="Group_79" data-name="Group 79" transform="translate(11.733 -7.49) rotate(45)">
+                            <path id="Path_75" data-name="Path 75" d="M0,0H27.185" transform="translate(0 13.592)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            <path id="Path_76" data-name="Path 76" d="M0,0H27.185" transform="translate(13.592) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            </g>
+                            </svg>
+                        </label>
                         <a href="index.html" class="sidenav__item sidenav__item--main">
                             <img class="sidenav__logo" src="public/img/dhg-logo-header.svg">
                         </a>
@@ -66,16 +74,18 @@ and open the template in the editor.
                             <img class="sidenav__logo" src="public/img/dh-finance-logo.svg">
                         </a>
                         <span class="sidenav__divider"></span>
-                        <a href="about.html" class="sidenav__item">
-                            <span class="sidenav__text">
-                                O NÁS
-                            </span>
-                        </a>
-                        <a href="#" class="sidenav__item">
-                            <span class="sidenav__text">
-                                +421 944 122 532
-                            </span>
-                        </a>
+                        <div class="sidenav__group">
+                            <a href="about.html" class="sidenav__item sidenav__item--margin">
+                                <span class="sidenav__text">
+                                    O NÁS
+                                </span>
+                            </a>
+                            <a href="#" class="sidenav__item">
+                                <span class="sidenav__text">
+                                    +421 944 122 532
+                                </span>
+                            </a>
+                        </div>
                         <div class="sidenav__languages">
                             <a href="finance.html" class="sidenav__languages__item sidenav__languages__item--active">
                                 SK
@@ -97,11 +107,11 @@ and open the template in the editor.
                     </div>
                     <img class="info__logo" src="public/img/dh-finance-logo.svg">
                     <div class="info__accordion ac">
-                        <div class="info__paragraph paragraph">
+                        <div class="info__accordion__wrapper">
                             <div class="info__paragraph paragraph">
                                 Proces investovania je dnes bežným postupom ako pasívne dosahovať zisk použitím svojich finančných prostriedkov.
                             </div>
-                            <div class="info__paragraph paragraph">
+                            <div class="info__paragraph paragraph paragraph--ml">
                                 Zakladateľ spoločnosti DH Finance vo svojich začiatkoch investovania na finančných trhoch spolupracoval a riadil svoje investície v tomto sektore prostredníctvom etablovaných spoločností na trhu, ako sú <u>Across Private Investments, Tatra Banka Wealth management alebo Slavia Capital.</u> Neskôr, v rámci reorganizácie portfólia, vznikla potreba založiť samostatnú spoločnosť, ktorá pokračovala v investovaní na finančných trhoch s väčšími aktívami doma a v zahraničí.
                                 <div class="info__illustration info__illustration--large">
                                     <img class="info__svg svg svg--developing" src="public/img/illustration-finance.svg">
@@ -120,6 +130,7 @@ and open the template in the editor.
                             </div>
                             <span class="info__accordion__button ac-q">
                             </span>
+                            <div class="info__gradient"></div>
                         </div>
                     </div>
                 </div>
@@ -133,97 +144,58 @@ and open the template in the editor.
                         PRIPRAVUJEME
                     </span>
                     <span class="heading__text">
-                        Naše invesície  
+                        Naše&nbsp;invesície  
                     </span>
                     <span class="heading__breadcrumb">/DEVELOPING&nbsp;&&nbsp;CONSTRUCTION/</span>
                 </h2>
                 <div class="invests__row">
                     <div class="invests__contacts contacts">
-                        <img class="contacts__logo" src="https://via.placeholder.com/274x90?text=Logo">
+                        <img class="contacts__logo" src="https://via.placeholder.com/274x90/f8f8f8/f8f8f8?text=a">
                         <table class="table table--plain" border="0" cellspacing="0" cellpadding="0">
                             <tr class="table__row">
-                                <td class="table__cell">Sídlo:</td><td class="table__cell">Greenwood Ecoenergy s.r.o.</td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem</u>
+                                </td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem ipsum dolor sit amet</u>
+                                </td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__cell"></td><td class="table__cell">Bratislava, 821 02</td>
+                                <td class="table__cell"></td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem ipsum dolor</u>
+                                </td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__cell"></td><td class="table__cell">Martina Horvátha 17/b</td>
+                                <td class="table__cell"></td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem ipsum dolor sit</u>
+                                </td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__cell">e-mail:</td><td class="table__cell">info@greenwood.com</td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem</u>
+                                </td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem ipsum dolor</u>
+                                </td>
                             </tr>
                             <tr class="table__row table__row--space">
-                                <td class="table__cell">web:</td><td class="table__cell">www.greenwood.sk</td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem</u>
+                                </td>
+                                <td class="table__cell">
+                                    <u class="placeholder-text">Lorem ipsum dolor</u>
+                                </td>
                             </tr>
                         </table>
                     </div>
                     <div class="invests__description">
                         <h2 class="invests__description__heading heading heading--2">
-                            Greenwood ecoenergy
+                            <u class="placeholder-text placeholder-text--bold">Lorem ipsum dolor sit</u>
                         </h2>
                         <div class="invests__paragraph paragraph">
-                            Investičná spoločnosť DH Group drží krok s aktuálnymi spoločenskými trendmi - <u>angažuje sa v oblasti výskumu v ekologickom poľnohospodárstve, či hľadaní alternatívnych zdrojov výroby energie.</u> Jej zameranie je rozšírené aj o oblasť developmentu a prieskumu finančného trhu spojeného s investíciami do finančných fondov. 
-                        </div>
-                    </div>
-                </div>
-                <div class="invests__row">
-                    <div class="invests__contacts contacts">
-                        <img class="contacts__logo" src="https://via.placeholder.com/274x90?text=Logo">
-                        <table class="table table--plain" border="0" cellspacing="0" cellpadding="0">
-                            <tr class="table__row">
-                                <td class="table__cell">Sídlo:</td><td class="table__cell">Greenwood Ecoenergy s.r.o.</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__cell"></td><td class="table__cell">Bratislava, 821 02</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__cell"></td><td class="table__cell">Martina Horvátha 17/b</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__cell">e-mail:</td><td class="table__cell">info@greenwood.com</td>
-                            </tr>
-                            <tr class="table__row table__row--space">
-                                <td class="table__cell">web:</td><td class="table__cell">www.greenwood.sk</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="invests__description">
-                        <h2 class="invests__description__heading heading heading--2">
-                            Greenwood ecoenergy
-                        </h2>
-                        <div class="invests__paragraph paragraph">
-                            Investičná spoločnosť DH Group drží krok s aktuálnymi spoločenskými trendmi - <u>angažuje sa v oblasti výskumu v ekologickom poľnohospodárstve, či hľadaní alternatívnych zdrojov výroby energie.</u> Jej zameranie je rozšírené aj o oblasť developmentu a prieskumu finančného trhu spojeného s investíciami do finančných fondov. 
-                        </div>
-                    </div>
-                </div>
-                <div class="invests__row">
-                    <div class="invests__contacts contacts">
-                        <img class="contacts__logo" src="https://via.placeholder.com/274x90?text=Logo">
-                        <table class="table table--plain" border="0" cellspacing="0" cellpadding="0">
-                            <tr class="table__row">
-                                <td class="table__cell">Sídlo:</td><td class="table__cell">Greenwood Ecoenergy s.r.o.</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__cell"></td><td class="table__cell">Bratislava, 821 02</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__cell"></td><td class="table__cell">Martina Horvátha 17/b</td>
-                            </tr>
-                            <tr class="table__row">
-                                <td class="table__cell">e-mail:</td><td class="table__cell">info@greenwood.com</td>
-                            </tr>
-                            <tr class="table__row table__row--space">
-                                <td class="table__cell">web:</td><td class="table__cell">www.greenwood.sk</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="invests__description">
-                        <h2 class="invests__description__heading heading heading--2">
-                            Greenwood ecoenergy
-                        </h2>
-                        <div class="invests__paragraph paragraph">
-                            Investičná spoločnosť DH Group drží krok s aktuálnymi spoločenskými trendmi - <u>angažuje sa v oblasti výskumu v ekologickom poľnohospodárstve, či hľadaní alternatívnych zdrojov výroby energie.</u> Jej zameranie je rozšírené aj o oblasť developmentu a prieskumu finančného trhu spojeného s investíciami do finančných fondov. 
+                            <u class="placeholder-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Aliquam ante. Mauris metus. Aliquam in lorem sit amet leo accumsan lacinia. Phasellus et lorem id felis nonummy placerat.</u> 
                         </div>
                     </div>
                 </div>
@@ -231,7 +203,7 @@ and open the template in the editor.
         </main>
         <footer class="footer">
             <img class="footer__img" src="public/img/dhg-logo-monotone.svg">
-            <div class="contacts" id="contacts">
+            <div class="contacts contacts--footer" id="contacts">
                 <h2 class="contacts__heading heading heading--2">
                     Kontakt
                 </h2>

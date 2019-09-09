@@ -291,11 +291,8 @@
 .sidenav {
   width: 100%;
   height: 100%;
-  min-height: 37.5rem;
-  max-height: 56.25rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   font-size: calc(0.73529vw + 0.91544rem); }
   @media (min-width: 62.5em) {
@@ -304,13 +301,22 @@
   @media (min-width: 80em) {
     .sidenav {
       font-size: 1.375rem; } }
+  @media (min-width: 62.5em) {
+    .sidenav {
+      min-height: 37.5rem;
+      max-height: 56.25rem;
+      justify-content: space-between; } }
 
 .sidenav__item {
-  width: 100%;
+  width: 13.125rem;
   display: flex;
   color: #3c3750;
   text-decoration: none;
-  /*margin-bottom: 3em;*/ }
+  margin-bottom: 2.5rem; }
+  @media (min-width: 62.5em) {
+    .sidenav__item {
+      margin-bottom: 0;
+      width: 100%; } }
   .sidenav__item--main {
     margin-bottom: 2em; }
   .sidenav__item--margin {
@@ -320,14 +326,30 @@
   .sidenav__item:not(.sidenav__item--main):hover .sidenav__text {
     transform: translateX(0.3125rem); }
 
+.sidenav__close {
+  margin-left: auto;
+  margin-bottom: 1.25rem; }
+
+.sidenav__close__svg {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block; }
+  @media (min-width: 62.5em) {
+    .sidenav__close__svg {
+      display: none; } }
+
 .sidenav__logo {
   width: 100%; }
 
 .sidenav__divider {
   width: 50%;
   height: 0.0625rem;
-  /*margin-bottom: 2em;*/
+  margin-bottom: 2.5rem;
   background-color: #817d8e; }
+  @media (min-width: 62.5em) {
+    .sidenav__divider {
+      margin-bottom: 0; } }
 
 .sidenav__languages {
   color: rgba(0, 0, 0, 0.2); }
@@ -504,7 +526,7 @@
   padding-top: calc(0vw + 6.25rem);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: calc(5.20833vw + 3.33333rem);
+  margin-bottom: calc(9.375vw + 0rem);
   flex-grow: 1; }
   @media (min-width: 80em) {
     .main {
@@ -589,7 +611,8 @@
 
 .info__heading {
   line-height: 1.3;
-  margin-bottom: 4.375rem; }
+  margin-bottom: 4.375rem;
+  position: relative; }
 
 .info__paragraph {
   position: relative; }
@@ -608,6 +631,8 @@
 
 .info__description {
   margin-bottom: 3.125rem; }
+  .page--about .info__description {
+    max-width: 56.25rem; }
   @media (min-width: 56.25em) {
     .info__description {
       margin-bottom: 3.125rem; } }
@@ -634,6 +659,17 @@
         display: none; }
       .info__illustration--large {
         display: block; } }
+  .info__illustration--about {
+    display: block;
+    width: 81.25rem;
+    max-width: none;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: -6.5625rem;
+    right: 0;
+    transform: translateX(71%);
+    z-index: -10;
+    opacity: 0.3; }
 
 .info__accordion {
   position: relative; }
@@ -730,7 +766,9 @@
       flex-direction: row; } }
 
 .invests__contacts {
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 28.125rem;
+  width: 100%; }
   .invests--preparing .invests__contacts {
     /*background-color: black;*/ }
   @media (min-width: 75em) {
@@ -756,19 +794,23 @@
   flex-wrap: wrap;
   color: #817d8e;
   font-size: calc(0.10417vw + 0.91667rem);
-  margin-bottom: 1.25rem;
-  width: 100%; }
+  box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
+  padding: 3.75rem 3.4375rem; }
   @media (min-width: 80em) {
     .contacts {
       font-size: 1rem; } }
-  @media (min-width: 62.5em) {
-    .contacts {
-      box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
-      padding: 3.75rem 3.4375rem;
-      width: auto; } }
+  .contacts--footer {
+    padding: 0;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    box-shadow: none; }
+    @media (min-width: 62.5em) {
+      .contacts--footer {
+        box-shadow: 0 0.3125rem 1.25rem 0 rgba(0, 0, 0, 0.05);
+        padding: 3.75rem 3.4375rem;
+        width: auto; } }
 
 .contacts__logo {
-  display: none;
   width: 100%;
   margin-bottom: 1.25em; }
   @media (min-width: 75em) {
@@ -782,7 +824,7 @@
 
 .contacts__col {
   width: 100%;
-  margin-bottom: 0.7em; }
+  margin-bottom: 2em; }
   @media (min-width: 81.25em) {
     .contacts__col {
       margin-bottom: 0;
@@ -985,6 +1027,7 @@
   font-size: calc(0.3125vw + 0.75rem);
   padding-top: 2em;
   padding-bottom: 2.5em;
+  padding-bottom: calc(14.58333vw + 0.83333rem);
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse; }
@@ -997,6 +1040,9 @@
   @media (min-width: 80em) {
     .footer {
       font-size: 1rem; } }
+  @media (min-width: 80em) {
+    .footer {
+      padding-bottom: 12.5rem; } }
 
 .footer__img {
   width: calc(8.33333vw + 5.20833rem); }

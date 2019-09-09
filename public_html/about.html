@@ -41,6 +41,14 @@ and open the template in the editor.
             <div class="sidebar__scrollarea">
                 <div class="sidebar__container">
                     <nav class="sidenav">
+                        <label for="sidebar" class="sidenav__close">
+                            <svg class="sidenav__close__svg" viewBox="0 0 23.465 23.465">
+                            <g id="Group_79" data-name="Group 79" transform="translate(11.733 -7.49) rotate(45)">
+                            <path id="Path_75" data-name="Path 75" d="M0,0H27.185" transform="translate(0 13.592)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            <path id="Path_76" data-name="Path 76" d="M0,0H27.185" transform="translate(13.592) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            </g>
+                            </svg>
+                        </label>
                         <a href="index.html" class="sidenav__item sidenav__item--main">
                             <img class="sidenav__logo" src="public/img/dhg-logo-header.svg">
                         </a>
@@ -57,16 +65,18 @@ and open the template in the editor.
                             <img class="sidenav__logo" src="public/img/dh-finance-logo.svg">
                         </a>
                         <span class="sidenav__divider"></span>
-                        <a href="about.html" class="sidenav__item">
-                            <span class="sidenav__text">
-                                O NÁS
-                            </span>
-                        </a>
-                        <a href="#" class="sidenav__item">
-                            <span class="sidenav__text">
-                                +421 944 122 532
-                            </span>
-                        </a>
+                        <div class="sidenav__group">
+                            <a href="about.html" class="sidenav__item sidenav__item--margin">
+                                <span class="sidenav__text">
+                                    O NÁS
+                                </span>
+                            </a>
+                            <a href="#" class="sidenav__item">
+                                <span class="sidenav__text">
+                                    +421 944 122 532
+                                </span>
+                            </a>
+                        </div>
                         <div class="sidenav__languages">
                             <a href="about.html" class="sidenav__languages__item sidenav__languages__item--active">
                                 SK
@@ -86,9 +96,11 @@ and open the template in the editor.
                     <img class="info__logo" src="public/img/dhg-logo.svg">
                     <h2 class="info__heading heading heading--2">
                         <span class="heading__light">Naše projekty zvyšujú kvalitu</span> života a budujú infraštruktúru.
+                        <img class="info__illustration info__illustration--about" src="public/img/dhg-logo-monotone.svg">
                     </h2>
                     <div class="info__paragraph paragraph">
                         Investičná skupina DH Group drží krok s aktuálnymi spoločenskými trendmi - angažujeme sa v oblasti výskumu v ekologickom poľnohospodárstve, či hľadaní alternatívnych zdrojov výroby energie. Naše zameranie je rozšírené aj o oblasť developmentu a prieskumu finančného trhu spojeného s private equity investíciami.
+
                     </div>
                     <div class="info__paragraph paragraph">
                         V rámci reštrukturalizácie spoločností bola spoločnosť DH Group založená v roku 2013 ako materská firma zastrešujúca štyri spoločnosti: <u>DH Solar Energy, DH Landscape Invest, DH Developing a DH Finance, ktoré sa venujú projektom zvyšujúcim kvalitu života a budujúcim infraštruktúru s veľkým dôrazom na udržateľnosť v každom segmente a odvetví.</u> Profesionalita manažmentu a zamestnancov v spojení s dynamikou firmy zabezpečujú vysokú úroveň a bezproblémovú kvalitu spolupráce
@@ -138,7 +150,7 @@ and open the template in the editor.
                 <div class="divisions__card division-finance">
                     <img class="divisions__card__logo" src="public/img/dh-finance-logo.svg">
                     <div class="divisions__card__paragraph">
-                         Naším cieľom je analýza finančného trhu, výber správnej investičnej stratégie a nástrojov a vyhľadávanie investičnej príležitosti s malou mierou rizika so zaujímavým výnosom.
+                        Naším cieľom je analýza finančného trhu, výber správnej investičnej stratégie a nástrojov a vyhľadávanie investičnej príležitosti s malou mierou rizika so zaujímavým výnosom.
                     </div>
                     <a href="finance.html" class="divisions__card__button">
                         <img class="ratio-keeper" src="public/img/ratio-keepers/1x1.png">
@@ -151,7 +163,7 @@ and open the template in the editor.
         </main>
         <footer class="footer">
             <img class="footer__img" src="public/img/dhg-logo-monotone.svg">
-            <div class="contacts" id="contacts">
+            <div class="contacts contacts--footer" id="contacts">
                 <h2 class="contacts__heading heading heading--2">
                     Kontakt
                 </h2>
